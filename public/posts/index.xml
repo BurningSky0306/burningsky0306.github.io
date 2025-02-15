@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Fan Jianbo&#39;s Blog</title>
-    <link>https://example.com/posts/</link>
+    <link>https://burningsky0306.github.io/Blog/posts/</link>
     <description>Recent content in Posts on Fan Jianbo&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,19 +10,19 @@
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Fan Jianbo</copyright>
     <lastBuildDate>Sat, 15 Feb 2025 15:34:53 +0800</lastBuildDate>
-    <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://burningsky0306.github.io/Blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to sync notes from WeRead to Notion</title>
-      <link>https://example.com/posts/how-to-sync-notes-from-weread-to-notion/</link>
+      <link>https://burningsky0306.github.io/Blog/posts/how-to-sync-notes-from-weread-to-notion/</link>
       <pubDate>Sat, 15 Feb 2025 15:34:53 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://example.com/posts/how-to-sync-notes-from-weread-to-notion/</guid>
+      <guid>https://burningsky0306.github.io/Blog/posts/how-to-sync-notes-from-weread-to-notion/</guid>
       <description>&lt;p&gt;This post is reprinted from &amp;ldquo;renamed document in my Notion&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How to ask questions</title>
-      <link>https://example.com/posts/how-to-ask-questions/</link>
+      <link>https://burningsky0306.github.io/Blog/posts/how-to-ask-questions/</link>
       <pubDate>Sat, 15 Feb 2025 15:26:21 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://example.com/posts/how-to-ask-questions/</guid>
+      <guid>https://burningsky0306.github.io/Blog/posts/how-to-ask-questions/</guid>
       <description>&lt;p&gt;This post is reprinted from &amp;ldquo;&lt;a href=&#34;http://www.catb.org/~esr/faqs/smart-questions.html&#34;&gt;How to ask questions&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
   </channel>
