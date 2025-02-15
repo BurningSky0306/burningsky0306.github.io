@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Fan Jianbo&#39;s Blog</title>
-    <link>https://burningsky0306.github.io/Blog/tags/</link>
+    <link>https://burningsky0306.github.io/tags/</link>
     <description>Recent content in Tags on Fan Jianbo&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Fan Jianbo</copyright>
-    <atom:link href="https://burningsky0306.github.io/Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://burningsky0306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

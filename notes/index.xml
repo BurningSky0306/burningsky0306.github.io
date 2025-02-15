@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on Fan Jianbo&#39;s Blog</title>
-    <link>https://burningsky0306.github.io/Blog/notes/</link>
+    <link>https://burningsky0306.github.io/notes/</link>
     <description>Recent content in Notes on Fan Jianbo&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
@@ -10,12 +10,12 @@
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Fan Jianbo</copyright>
     <lastBuildDate>Sat, 15 Feb 2025 15:55:06 +0800</lastBuildDate>
-    <atom:link href="https://burningsky0306.github.io/Blog/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://burningsky0306.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to choose your area</title>
-      <link>https://burningsky0306.github.io/Blog/notes/how-to-choose-your-area/</link>
+      <link>https://burningsky0306.github.io/notes/how-to-choose-your-area/</link>
       <pubDate>Sat, 15 Feb 2025 15:55:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://burningsky0306.github.io/Blog/notes/how-to-choose-your-area/</guid>
+      <guid>https://burningsky0306.github.io/notes/how-to-choose-your-area/</guid>
       <description>&lt;p&gt;This note is reprinted from my flomo app.&lt;/p&gt;</description>
     </item>
   </channel>

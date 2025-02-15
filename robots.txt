@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://burningsky0306.github.io/Blog/sitemap.xml
+Sitemap: https://burningsky0306.github.io/sitemap.xml
