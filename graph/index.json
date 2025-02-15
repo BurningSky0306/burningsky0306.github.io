@@ -1,0 +1,33 @@
+{
+  "graph": {
+    "/notes/how-to-choose-your-area/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/how-to-ask-questions/": {
+      "in": [],
+      "out": []
+    },
+    "/posts/how-to-sync-notes-from-weread-to-notion/": {
+      "in": [],
+      "out": []
+    }
+  },
+  "pages": {
+    "/notes/how-to-choose-your-area/": {
+      "permalink": "/notes/how-to-choose-your-area/",
+      "section": "notes",
+      "title": "How to Choose Your Area"
+    },
+    "/posts/how-to-ask-questions/": {
+      "permalink": "/posts/how-to-ask-questions/",
+      "section": "posts",
+      "title": "How to Ask Questions"
+    },
+    "/posts/how-to-sync-notes-from-weread-to-notion/": {
+      "permalink": "/posts/how-to-sync-notes-from-weread-to-notion/",
+      "section": "posts",
+      "title": "How to Sync Notes From WeRead to Notion"
+    }
+  }
+}
