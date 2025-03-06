@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Fan Jianbo&#39;s Blog</title>
+    <title>Categories on Jethro Vanbrook&#39;s Blog</title>
     <link>https://burningsky0306.github.io/categories/</link>
-    <description>Recent content in Categories on Fan Jianbo&#39;s Blog</description>
+    <description>Recent content in Categories on Jethro Vanbrook&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
-    <copyright>Fan Jianbo</copyright>
-    <lastBuildDate>Sat, 15 Feb 2025 15:55:06 +0800</lastBuildDate>
+    <copyright>Jethro Vanbrook</copyright>
+    <lastBuildDate>Thu, 06 Mar 2025 19:16:57 +0800</lastBuildDate>
     <atom:link href="https://burningsky0306.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Area</title>
-      <link>https://burningsky0306.github.io/categories/area/</link>
-      <pubDate>Sat, 15 Feb 2025 15:55:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://burningsky0306.github.io/categories/area/</guid>
+      <title>Psychology</title>
+      <link>https://burningsky0306.github.io/categories/psychology/</link>
+      <pubDate>Thu, 06 Mar 2025 19:16:57 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/categories/psychology/</guid>
       <description></description>
     </item>
     <item>
-      <title>Knowledge Management</title>
-      <link>https://burningsky0306.github.io/categories/knowledge-management/</link>
-      <pubDate>Sat, 15 Feb 2025 15:55:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://burningsky0306.github.io/categories/knowledge-management/</guid>
+      <title>Statistical Analysis</title>
+      <link>https://burningsky0306.github.io/categories/statistical-analysis/</link>
+      <pubDate>Thu, 06 Mar 2025 19:16:57 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/categories/statistical-analysis/</guid>
       <description></description>
     </item>
   </channel>

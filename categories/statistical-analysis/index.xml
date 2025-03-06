@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Notes on Jethro Vanbrook&#39;s Blog</title>
-    <link>https://burningsky0306.github.io/notes/</link>
-    <description>Recent content in Notes on Jethro Vanbrook&#39;s Blog</description>
+    <title>Statistical Analysis on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://burningsky0306.github.io/categories/statistical-analysis/</link>
+    <description>Recent content in Statistical Analysis on Jethro Vanbrook&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Jethro Vanbrook</copyright>
     <lastBuildDate>Thu, 06 Mar 2025 19:16:57 +0800</lastBuildDate>
-    <atom:link href="https://burningsky0306.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://burningsky0306.github.io/categories/statistical-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing</title>
       <link>https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/</link>

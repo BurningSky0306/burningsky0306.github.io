@@ -1,7 +1,7 @@
 baseURL = 'https://burningsky0306.github.io'
 languageCode = 'en-us'
-title = "Fan Jianbo's Blog"
-copyright = 'Fan Jianbo' # Used in the footer copyright mention.
+title = "Jethro Vanbrook's Blog"
+copyright = 'Jethro Vanbrook' # Used in the footer copyright mention.
 enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
 
 [module]
