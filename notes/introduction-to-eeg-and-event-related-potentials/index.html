@@ -1,0 +1,765 @@
+<!doctype html>
+<html
+  lang="en-us"
+  dir="ltr"
+>
+  <head>
+    <meta charset="utf-8" />
+<meta name="language" content="en" />
+<meta name="viewport" content="width=device-width" />
+<title>
+    EEG 和 ERP 简介 | Jethro Vanbrook&#39;s Blog
+</title>
+  <meta name="description" content="本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。" />
+<meta property="og:url" content="https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/">
+  <meta property="og:site_name" content="Jethro Vanbrook&#39;s Blog">
+  <meta property="og:title" content="EEG 和 ERP 简介">
+  <meta property="og:description" content="本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="notes">
+    <meta property="article:published_time" content="2025-03-10T22:01:35+08:00">
+    <meta property="article:modified_time" content="2025-03-10T22:01:35+08:00">
+    <meta property="article:tag" content="Eeg">
+    <meta property="article:tag" content="Erp">
+
+
+  <meta itemprop="name" content="EEG 和 ERP 简介">
+  <meta itemprop="description" content="本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。">
+  <meta itemprop="datePublished" content="2025-03-10T22:01:35+08:00">
+  <meta itemprop="dateModified" content="2025-03-10T22:01:35+08:00">
+  <meta itemprop="wordCount" content="184">
+  <meta itemprop="keywords" content="Eeg,Erp">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="EEG 和 ERP 简介">
+  <meta name="twitter:description" content="本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。">
+
+<link rel="canonical" href="https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/" />
+
+      <link
+        rel="stylesheet"
+        href="/css/index.min.7dc5bce5e48ff3fe71c582eac851646db39f1a70e9dc6198c199a3189731869e.css"
+        integrity="sha256-fcW85eSP8/5xxYLqyFFkbbOfGnDp3GGYwZmjGJcxhp4="
+        crossorigin="anonymous"
+      />
+
+
+      <script
+        src="/js/main.d08dd7bf84e75145632853df5565c828a4a44de84df4bf08672d692241737c30.js"
+        integrity="sha256-0I3Xv4TnUUVjKFPfVWXIKKSkTehN9L8IZy1pIkFzfDA="
+        crossorigin="anonymous"
+        defer
+      ></script>
+  
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+  integrity="sha256-cXvJrnhTth8PdkVd3fDs1PUnp4P0LeKsJGhImcHEYlg="
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+  integrity="sha256-5r/l3uvUx8zScgVbq2O9OrLHO5B7bmoi01J0CoE4H9Q="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  integrity="sha256-e1fUJ6xicGd9r42DgN7SzHMzb5FJoWe44f4NbvZmBK4="
+  crossorigin="anonymous"
+></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: '\\[', right: '\\]', display: true }, 
+        { left: '$$', right: '$$', display: true }, 
+        { left: '\\(', right: '\\)', display: false } 
+      ],
+      throwOnError: false
+    });
+  });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@id": "https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/",
+  "@type": "BlogPosting",
+  "articleSection": [
+    "Psychology",
+    "Cognitive Neuroscience"
+  ],
+  "author": {
+    "@type": "Person",
+    "email": "BurningSky0306@gmail.com",
+    "name": "Fan Jianbo"
+  },
+  "copyrightNotice": "Jethro Vanbrook",
+  "datePublished": "2025-03-10",
+  "description": "本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。",
+  "headline": "EEG 和 ERP 简介",
+  "isPartOf": {
+    "@id": "https://burningsky0306.github.io/notes/",
+    "@type": "Blog",
+    "name": "Notes"
+  },
+  "keywords": [
+    "Eeg",
+    "Erp"
+  ],
+  "mainEntityOfPage": "https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/",
+  "name": "EEG 和 ERP 简介",
+  "timeRequired": "PT1M",
+  "url": "https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/",
+  "wordCount": 184
+}
+</script>
+
+
+  </head>
+  <body>
+    <div class="container mx-auto flex max-w-prose flex-col space-y-10 p-4 md:p-6">
+      <header class="flex flex-row items-center justify-between">
+        <div>
+  <a id="skip-nav" class="sr-only" href="#maincontent">Skip to main content</a>
+  <a class="font-semibold" href="/">Jethro Vanbrook&#39;s Blog</a>
+</div>
+
+  <nav>
+    <ul class="flex flex-row items-center justify-end space-x-4">
+    <li>
+      <a aria-current="true" class="ancestor" href="/notes/">Notes</a
+      >
+    </li>
+    <li>
+      <a>Posts</a
+      >
+    </li>
+    <li>
+      <a href="/graph/">Graph</a
+      >
+    </li>
+    </ul>
+  </nav>
+
+
+      </header>
+      <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
+        <article class="main">
+    <header>
+      <h1 class="!mb-1">EEG 和 ERP 简介</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2025-03-10T22:01:35&#43;08:00"
+            >March 10, 2025</time
+          >
+        </div>
+    </header>
+
+    <p>本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。</p>
+<h4 id="记录到的电位的组成" class="scroll-mt-8 group">
+  记录到的电位的组成
+  
+    <a href="#%e8%ae%b0%e5%bd%95%e5%88%b0%e7%9a%84%e7%94%b5%e4%bd%8d%e7%9a%84%e7%bb%84%e6%88%90"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>诱发电位： Evoked Potential。实验刺激引发的电位，是研究关注的重点。</p>
+<p>自发电位： Spontaneous Potential</p>
+<p>伪迹和噪音：包含皮肤电，眼电，心电，皮肤电，肌电……。伪迹是与实验无关的一些生理活动所伴随的电位，是系统误差。噪音是随机误差。</p>
+<blockquote>
+<p>EEG 只能记录到大脑浅层信号且只能记录到突触后电位。</p></blockquote>
+<h4 id="自发电位包含下面几种不同频段" class="scroll-mt-8 group">
+  自发电位包含下面几种不同频段
+  
+    <a href="#%e8%87%aa%e5%8f%91%e7%94%b5%e4%bd%8d%e5%8c%85%e5%90%ab%e4%b8%8b%e9%9d%a2%e5%87%a0%e7%a7%8d%e4%b8%8d%e5%90%8c%e9%a2%91%e6%ae%b5"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<ol>
+<li>\(\delta\)：1-4Hz</li>
+<li>\(\theta\)：4-8Hz</li>
+<li>\(\alpha\)：8-12Hz</li>
+<li>\(\beta\)：12-30Hz</li>
+<li>\(\gamma\)：30Hz以上</li>
+</ol>
+<blockquote>
+<p>这些信号对应的频率没有严格且明确的规范，只要是大致范围内即可</p></blockquote>
+<h4 id="刺激间隔的安排" class="scroll-mt-8 group">
+  刺激间隔的安排
+  
+    <a href="#%e5%88%ba%e6%bf%80%e9%97%b4%e9%9a%94%e7%9a%84%e5%ae%89%e6%8e%92"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>一个 trial 能够激发一次诱发电位，相邻两个 trial 的时间间隔不能太短，两个 trial 之间的时间间隔被称为 SOA，其是指前一个刺激开始到下一个刺激开始的时间间隔。此外， ISI 是指前一个刺激结束到下一个刺激开始的时间间隔。</p>
+<p>一般情况下 ISI 在800ms及以上即可，多为1s，1.2s和1.5s</p>
+<h4 id="电极的放置位置" class="scroll-mt-8 group">
+  电极的放置位置
+  
+    <a href="#%e7%94%b5%e6%9e%81%e7%9a%84%e6%94%be%e7%bd%ae%e4%bd%8d%e7%bd%ae"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>电极安放存在多种方式，例如10/20系统，10/10系统，10/5系统等</p>
+<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102205023.png" alt=""></p>
+<p>英文字母缩写代表电极所在的脑区。左半球为奇数，右半球为偶数。越往两边走离中轴线越远且数字越大。M1 和 M2 放置在耳垂上，目的是为了和其他电极形成电势差以测量电压，因此也被称为参考电极。参考电极有些时候也会选择乳突，其位置位于耳后突出的部分。</p>
+<h4 id="电极安放的细节" class="scroll-mt-8 group">
+  电极安放的细节
+  
+    <a href="#%e7%94%b5%e6%9e%81%e5%ae%89%e6%94%be%e7%9a%84%e7%bb%86%e8%8a%82"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>对于高电阻的电极的安放：</p>
+<ol>
+<li>带上电极帽，使用钝头注射器穿过电极孔来注射电极膏（实际上就是面粉加水）</li>
+<li>压电极的时候要压紧一点</li>
+</ol>
+<p>对于低电阻的电极的安放：</p>
+<ol>
+<li>不用打导电膏，更加舒适，更加安全，适合婴儿小孩</li>
+<li>由于电阻更低，因此更容易受到皮肤电的干扰，可以通过提前洗头或增加试次来降低影响</li>
+</ol>
+<h4 id="脑电信号的预处理" class="scroll-mt-8 group">
+  脑电信号的预处理
+  
+    <a href="#%e8%84%91%e7%94%b5%e4%bf%a1%e5%8f%b7%e7%9a%84%e9%a2%84%e5%a4%84%e7%90%86"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>首先打 Trigger。实际上就是确定在整个流程中计划要在哪些时间点施加刺激并对其进行记录</p>
+<p>其次滤波。</p>
+<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102205326.png" alt=""></p>
+<p>A图是实际记录到脑电信号，其横坐标为时间，纵坐标为信号强度，这种信号表达方式是时域表达。</p>
+<p>B图则是利用A图记录到的数据经过傅里叶变换得到的脑电信号，其横坐标为脑电频率，纵坐标为信号强度，这种信号表达方式是频域表达。</p>
+<p>A图中的高频低波幅的脑电信号对应了B图的60hz低强度信号。</p>
+<p>一般情况下需要将小于1Hz和大于30hz的信号过滤掉。</p>
+<p>进而，在A图的原始脑电信号的基础上减去60hz正弦波的异常脑电就得到了E图更加平滑且去除了干扰信号的脑电，实现了滤波。</p>
+<blockquote>
+<p>傅里叶变换的逻辑是认为任何一种连续变化的信号都可以还原成有限个数的正弦波。进而可以得到信号的频率和强度。</p></blockquote>
+<p>此外，除了通过滤波来去除伪迹以外，还可以通过人为的肉眼校正（主观性较强，不推荐）和设置上下阈限来去除异常电极信号。</p>
+<p>然后是 ICA 法去除伪迹（Independent Content Analysis，独立成分分析）</p>
+<p>该方法能够通过傅里叶变换将原始的混合脑电信号转换成相对独立的不同频率和强度的正弦波，并且显示出不同的正弦波在大脑皮层各个脑区分布的概率密度。</p>
+<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102206964.png" alt=""></p>
+<p>如图所示，通过插件可以实现脑电信号来源的估计并给出准确率的估计值。研究者可以根据估计的概率大小来有选择的去除特定的脑电信号。</p>
+<p>然后将每个 Trigger 所激发的诱发电位分段，得到所有 Trigger 的分段脑电信号。</p>
+<p>然后是基线校正。随着实验的进行，脑电信号可能出现频率比较低的漂移，导致前后间隔时间比较长的 Trigger 所对应的脑电信号强度差距过大。对此，可以用每个 Trigger 对应的脑电信号减去该 Trigger 前 50 到 100ms 左右的非诱发电位的脑电信号，从而得到该 Trigger 的相对诱发电位。</p>
+<p>然后在基线校正过后再进行叠加平均法，指将前面处理好的每个 Trigger 的脑电信号叠加起来并计算平均值就能够消除随机产生且影响效果随机的噪音信号。</p>
+<p>最后，在实际科研当中，不可能只有一种类型的 Trigger ，因此需要相应类型的 Trigger 分别叠加平均。此外，除了可以同一个被试不同类型的 Trigger 分别叠加平均，还可以相同组或全部的被试的同一类型的 Trigger 叠加平均。</p>
+<h4 id="脑电的其他细节" class="scroll-mt-8 group">
+  脑电的其他细节
+  
+    <a href="#%e8%84%91%e7%94%b5%e7%9a%84%e5%85%b6%e4%bb%96%e7%bb%86%e8%8a%82"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>上述的信号预处理都是事后补救措施，为了提高数据质量，更好的方法是在实验开始前就尽量避免无关因素影响实验过程。对此可以采用如下几种方法：</p>
+<ol>
+<li>提前告知被试实验要求，引起被试重视</li>
+<li>告知被试高质量的数据将会得到更高的报酬</li>
+<li>合理安排被试在实验过程中的休息时间</li>
+</ol>
+<h4 id="判断脑电信号质量的一种方法" class="scroll-mt-8 group">
+  判断脑电信号质量的一种方法
+  
+    <a href="#%e5%88%a4%e6%96%ad%e8%84%91%e7%94%b5%e4%bf%a1%e5%8f%b7%e8%b4%a8%e9%87%8f%e7%9a%84%e4%b8%80%e7%a7%8d%e6%96%b9%e6%b3%95"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>观察叠加平均后的 Trigger 的前面大约 50 到 100ms 的基线信号是否稳定。如果不稳定，说明研究存在一定问题，研究内部效度降低。这可能有两种原因，其一是 Trigger 之间的 ISI 设置得太短，其二是伪迹和噪音控制的很差。</p>
+<h4 id="脑电信号的正式处理" class="scroll-mt-8 group">
+  脑电信号的正式处理
+  
+    <a href="#%e8%84%91%e7%94%b5%e4%bf%a1%e5%8f%b7%e7%9a%84%e6%ad%a3%e5%bc%8f%e5%a4%84%e7%90%86"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>在信号的预处理之后，就得到了 EP（Evoked Potential，诱发电位），由于这种 EP 是和刺激事件绑定的，因此进一步能够得到 ERP（Event-Related Potential，事件相关电位）。</p>
+<p>在此基础上就可以进一步提取信号的成分。</p>
+<h4 id="典型的脑电成分" class="scroll-mt-8 group">
+  典型的脑电成分
+  
+    <a href="#%e5%85%b8%e5%9e%8b%e7%9a%84%e8%84%91%e7%94%b5%e6%88%90%e5%88%86"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>脑电成分的命名，其中 P（positive）代表正波，N（negative）代表负波。</p>
+<p>P100, P200, P300……分别代表100ms左右，200ms左右，300ms 左右出现的正波，负波命名同理。</p>
+<p>P1, P2, P3……分别代表出现的第一个，第二个，第三个正波，负波命名同理。此外，其也有可能代表100ms, 200ms, 300ms 左右出现的正波。具体情况具体分析，脑电成分的命名没有标准规范。</p>
+<h4 id="脑电成分分析的步骤" class="scroll-mt-8 group">
+  脑电成分分析的步骤
+  
+    <a href="#%e8%84%91%e7%94%b5%e6%88%90%e5%88%86%e5%88%86%e6%9e%90%e7%9a%84%e6%ad%a5%e9%aa%a4"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<ol>
+<li>设置时间窗：设置一个时间窗，用它把自己关心的脑电成分框起来，计算这段时间内的不同处理条件下的脑电信号的各自的平均值，这就是这段时间内的因变量指标。</li>
+<li>具体时间窗的设置取决于研究目的和前人文献，研究目的确定了研究关注的脑电类型，前人文献确定了哪些脑电成分与特定的脑电类型有关。</li>
+<li>此外，在自己的研究当中需要论证选取的脑电成分的确反映了研究目的所关注的脑电类型。对此，可以计算脑电指标和行为指标的相关来论证。</li>
+</ol>
+<p>在实际的科研当中，很少事前确定时间窗，而是从 0ms 开始依次对每一个能够记录数据的时间点进行差异显著性检验并期望能够检验出显著效应。如果存在显著的时间点但其是孤立的，那么这可能反映了随机误差；如果存在连续的且显著的时间点，那么这可能暗示了实验处理效应的存在，对此就可以设置时间窗。此后，再去查文献，寻找相关解释。</p>
+<p>这种方法由于会进行多次检验，是数据驱动的结果，因此会导致一，二类错误累加，得到假阳性的结果。为了确保结论的正确性，理应重复验证，但实际上很少人会这么做。</p>
+<h3 id="脑电研究的前沿" class="scroll-mt-8 group">
+  脑电研究的前沿
+  
+    <a href="#%e8%84%91%e7%94%b5%e7%a0%94%e7%a9%b6%e7%9a%84%e5%89%8d%e6%b2%bf"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h3>
+<h4 id="erp-的定位问题" class="scroll-mt-8 group">
+  ERP 的定位问题
+  
+    <a href="#erp-%e7%9a%84%e5%ae%9a%e4%bd%8d%e9%97%ae%e9%a2%98"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>上述关于 EEG 和 ERP 的内容是比较传统比较经典的研究范式，最新的 EEG 领域的前沿科学关注的是如何解决 EEG 信号定位难的问题。</p>
+<p>研究假设脑袋中存在一些放电的偶极子，脑电设备记录到的电信号就是来源于这些偶极子。偶极子的正运算就是从偶极子的具体位置得到实际接收到的脑电信号，偶极子的负运算就是从实际接收到的脑电信号得到偶极子的具体位置。但实际上偶极子的负运算非常困难且结果不可靠，这是由脑电设备本身的性质决定的。</p>
+<h4 id="短时傅里叶变换-stft-和快速傅里叶变换-fft" class="scroll-mt-8 group">
+  短时傅里叶变换 STFT 和快速傅里叶变换 FFT
+  
+    <a href="#%e7%9f%ad%e6%97%b6%e5%82%85%e9%87%8c%e5%8f%b6%e5%8f%98%e6%8d%a2-stft-%e5%92%8c%e5%bf%ab%e9%80%9f%e5%82%85%e9%87%8c%e5%8f%b6%e5%8f%98%e6%8d%a2-fft"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102206282.png" alt=""></p>
+<p>在之前的滤波当中，傅里叶变换可以将脑电信号的时域表达转换为频域表达，得到一段脑电信号所对应的正弦波的组成。它是直接对全程脑电信号进行傅里叶变换的。</p>
+<p>在短时傅里叶变换中，则是对设定的时间窗内的脑电信号的进行傅里叶变换，时间窗的起止点和全域由研究者决定。</p>
+<p>此外，该方法还关注不同频率的正弦波随着时间的推移其强度如何发生变化。因此，研究者还会设定一个步长，时间窗会按照该步长从最开始的起点一直移动到脑电信号结束，在时间窗每发生一次移动后，就会进行一次傅里叶变换。此外，可以用每个时间窗的中点来代表这一整个时间窗。</p>
+<p>最后，将所有时间窗的频域表达用一张横坐标为时间，纵坐标为正弦波频率，颜色深浅为正弦波强度的图来表示。</p>
+<p>如上面右图所示，颜色越偏向红色就说明该正弦波的强度相对于标准强度更强，越偏向蓝色则代表相对于标准强度更弱。例如，在50ms 左右 30hz 以上的正弦 \(\gamma\) 波的强度就很大。200ms 左右 20到 30Hz 之间的正弦 \(\beta\) 波的强度就很小。</p>
+<p>快速傅里叶变换 FFT 和 短时傅里叶变换 STFT 没有本质差异，只不过优化了数学算法，提高了变换效率。</p>
+<p>最后，脑电信号一般并非周期性的正弦波，而是存在明显起止的纺锤波，如下图右侧所示。因此在短时傅里叶变换中，相较于将脑电信号拆分为周期性正弦波，更加的处理方案是拆分为纺锤波。</p>
+<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102207652.png" alt=""></p>
+  </article>
+    <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-shapes h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"
+  />
+  <rect width="7" height="7" x="3" y="14" rx="1" />
+  <circle cx="17.5" cy="17.5" r="3.5" />
+</svg>
+
+        <span>Categories</span>
+      </h2>
+
+      <ul class="ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/categories/psychology/" class="taxonomy category">psychology</a>
+          </li>
+          <li>
+            <a href="/categories/cognitive-neuroscience/" class="taxonomy category">cognitive neuroscience</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-tags h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path d="m15 5 6.3 6.3a2.4 2.4 0 0 1 0 3.4L17 19" />
+  <path
+    d="M9.586 5.586A2 2 0 0 0 8.172 5H3a1 1 0 0 0-1 1v5.172a2 2 0 0 0 .586 1.414L8.29 18.29a2.426 2.426 0 0 0 3.42 0l3.58-3.58a2.426 2.426 0 0 0 0-3.42z"
+  />
+  <circle cx="6.5" cy="9.5" r=".5" fill="currentColor" />
+</svg>
+
+        <span>Tags</span>
+      </h2>
+
+      <ul class="not-prose ml-6 flex flex-row flex-wrap items-center space-x-2">
+          <li>
+            <a href="/tags/eeg/" class="taxonomy tag">eeg</a>
+          </li>
+          <li>
+            <a href="/tags/erp/" class="taxonomy tag">erp</a>
+          </li>
+      </ul>
+    </section>
+    <section class="flex flex-col space-y-4" aria-hidden="true">
+      <h2 class="flex flex-row items-center space-x-2 text-lg font-semibold">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-chart-network h-4 w-4"
+  viewBox="0 0 24 24"
+  aria-hidden="true"
+>
+  <path
+    d="m13.11 7.664 1.78 2.672M14.162 12.788l-3.324 1.424M20 4l-6.06 1.515M3 3v16a2 2 0 0 0 2 2h16"
+  />
+  <circle cx="12" cy="6" r="2" />
+  <circle cx="16" cy="12" r="2" />
+  <circle cx="9" cy="15" r="2" />
+</svg>
+
+        <span>Graph</span>
+      </h2>
+
+      <content-network-graph
+  class="h-64 ml-6"
+  data-endpoint="/graph/index.json"
+  page="/notes/introduction-to-eeg-and-event-related-potentials/"
+></content-network-graph>
+
+    </section>
+</aside>
+
+
+      </main>
+      <footer class="mt-20 border-t border-neutral-100 pt-2 text-xs">
+        <section class="items-top flex flex-row justify-between opacity-70">
+  <div class="flex flex-col space-y-2">
+      <p>Copyright &copy; 2025, Jethro Vanbrook.</p>
+      <div
+        xmlns:cc="https://creativecommons.org/ns#"
+        xmlns:dct="http://purl.org/dc/terms/"
+        about="https://creativecommons.org"
+      >
+        Content is available under
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" class="inline-block" title="Creative Commons Attribution-ShareAlike 4.0 International"
+          >CC BY-SA 4.0</a
+        >
+        unless otherwise noted.
+      </div>
+        <div
+          class="mt-2 flex items-center space-x-2 fill-slate-400 hover:fill-slate-600 motion-safe:transition-colors"
+        >
+          <div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+  aria-hidden="true"
+>
+  <title>Creative Commons</title>
+  <circle fill="transparent" cx="37.785" cy="28.501" r="28.836" />
+  <path
+    d="M37.441-3.5c8.951 0 16.572 3.125 22.857 9.372 3.008 3.009 5.295 6.448 6.857 10.314 1.561 3.867 2.344 7.971 2.344 12.314 0 4.381-.773 8.486-2.314 12.313-1.543 3.828-3.82 7.21-6.828 10.143-3.123 3.085-6.666 5.448-10.629 7.086-3.961 1.638-8.057 2.457-12.285 2.457s-8.276-.808-12.143-2.429c-3.866-1.618-7.333-3.961-10.4-7.027-3.067-3.066-5.4-6.524-7-10.372S5.5 32.767 5.5 28.5c0-4.229.809-8.295 2.428-12.2 1.619-3.905 3.972-7.4 7.057-10.486C21.08-.394 28.565-3.5 37.441-3.5zm.116 5.772c-7.314 0-13.467 2.553-18.458 7.657-2.515 2.553-4.448 5.419-5.8 8.6a25.204 25.204 0 0 0-2.029 9.972c0 3.429.675 6.734 2.029 9.913 1.353 3.183 3.285 6.021 5.8 8.516 2.514 2.496 5.351 4.399 8.515 5.715a25.652 25.652 0 0 0 9.943 1.971c3.428 0 6.75-.665 9.973-1.999 3.219-1.335 6.121-3.257 8.713-5.771 4.99-4.876 7.484-10.99 7.484-18.344 0-3.543-.648-6.895-1.943-10.057-1.293-3.162-3.18-5.98-5.654-8.458-5.146-5.143-11.335-7.715-18.573-7.715zm-.401 20.915-4.287 2.229c-.458-.951-1.019-1.619-1.685-2-.667-.38-1.286-.571-1.858-.571-2.856 0-4.286 1.885-4.286 5.657 0 1.714.362 3.084 1.085 4.113.724 1.029 1.791 1.544 3.201 1.544 1.867 0 3.181-.915 3.944-2.743l3.942 2c-.838 1.563-2 2.791-3.486 3.686-1.484.896-3.123 1.343-4.914 1.343-2.857 0-5.163-.875-6.915-2.629-1.752-1.752-2.628-4.19-2.628-7.313 0-3.048.886-5.466 2.657-7.257 1.771-1.79 4.009-2.686 6.715-2.686 3.963-.002 6.8 1.541 8.515 4.627zm18.457 0-4.229 2.229c-.457-.951-1.02-1.619-1.686-2-.668-.38-1.307-.571-1.914-.571-2.857 0-4.287 1.885-4.287 5.657 0 1.714.363 3.084 1.086 4.113.723 1.029 1.789 1.544 3.201 1.544 1.865 0 3.18-.915 3.941-2.743l4 2c-.875 1.563-2.057 2.791-3.541 3.686a9.233 9.233 0 0 1-4.857 1.343c-2.896 0-5.209-.875-6.941-2.629-1.736-1.752-2.602-4.19-2.602-7.313 0-3.048.885-5.466 2.658-7.257 1.77-1.79 4.008-2.686 6.713-2.686 3.962-.002 6.783 1.541 8.458 4.627z"
+  />
+</svg>
+</div><div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+>
+  <title>Credit must be given to the creator</title>
+  <circle fill="transparent" cx="37.637" cy="28.806" r="28.276" />
+  <path
+    d="M37.443-3.5c8.988 0 16.57 3.085 22.742 9.257C66.393 11.967 69.5 19.548 69.5 28.5c0 8.991-3.049 16.476-9.145 22.456-6.476 6.363-14.113 9.544-22.912 9.544-8.649 0-16.153-3.144-22.514-9.43C8.644 44.784 5.5 37.262 5.5 28.5c0-8.761 3.144-16.342 9.429-22.742C21.101-.415 28.604-3.5 37.443-3.5zm.114 5.772c-7.276 0-13.428 2.553-18.457 7.657-5.22 5.334-7.829 11.525-7.829 18.572 0 7.086 2.59 13.22 7.77 18.398 5.181 5.182 11.352 7.771 18.514 7.771 7.123 0 13.334-2.607 18.629-7.828 5.029-4.838 7.543-10.952 7.543-18.343 0-7.276-2.553-13.465-7.656-18.571-5.104-5.104-11.276-7.656-18.514-7.656zm8.572 18.285v13.085h-3.656v15.542h-9.944V33.643h-3.656V20.557c0-.572.2-1.057.599-1.457.401-.399.887-.6 1.457-.6h13.144c.533 0 1.01.2 1.428.6.417.4.628.886.628 1.457zm-13.087-8.228c0-3.008 1.485-4.514 4.458-4.514s4.457 1.504 4.457 4.514c0 2.971-1.486 4.457-4.457 4.457s-4.458-1.486-4.458-4.457z"
+  />
+</svg>
+</div><div class="flex-none cursor-help"><svg
+  version="1.0"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="5.5 -3.5 64 64"
+  xml:space="preserve"
+  class="w-5 h-5 block"
+>
+  <title>Adaptations must be shared under the same terms</title>
+  <circle fill="transparent" cx="36.944" cy="28.631" r="29.105" />
+  <path
+    d="M37.443-3.5c8.951 0 16.531 3.105 22.742 9.315C66.393 11.987 69.5 19.548 69.5 28.5c0 8.954-3.049 16.457-9.145 22.514-6.437 6.324-14.076 9.486-22.912 9.486-8.649 0-16.153-3.143-22.514-9.429C8.644 44.786 5.5 37.264 5.5 28.501c0-8.723 3.144-16.285 9.429-22.685C21.138-.395 28.643-3.5 37.443-3.5zm.114 5.772c-7.276 0-13.428 2.572-18.457 7.715-5.22 5.296-7.829 11.467-7.829 18.513 0 7.125 2.59 13.257 7.77 18.4 5.181 5.182 11.352 7.771 18.514 7.771 7.123 0 13.334-2.609 18.629-7.828 5.029-4.876 7.543-10.99 7.543-18.343 0-7.313-2.553-13.485-7.656-18.513-5.067-5.145-11.239-7.715-18.514-7.715zM23.271 23.985c.609-3.924 2.189-6.962 4.742-9.114 2.552-2.152 5.656-3.228 9.314-3.228 5.027 0 9.029 1.62 12 4.856 2.971 3.238 4.457 7.391 4.457 12.457 0 4.915-1.543 9-4.627 12.256-3.088 3.256-7.086 4.886-12.002 4.886-3.619 0-6.743-1.085-9.371-3.257-2.629-2.172-4.209-5.257-4.743-9.257H31.1c.19 3.886 2.533 5.829 7.029 5.829 2.246 0 4.057-.972 5.428-2.914 1.373-1.942 2.059-4.534 2.059-7.771 0-3.391-.629-5.971-1.885-7.743-1.258-1.771-3.066-2.657-5.43-2.657-4.268 0-6.667 1.885-7.2 5.656h2.343l-6.342 6.343-6.343-6.343 2.512.001z"
+  />
+</svg>
+</div>
+        </div>
+
+  </div>
+    <div>
+      <a
+        href="https://github.com/michenriksen/hugo-theme-til"
+        title="Today I Learned &#8212; A Hugo theme by Michael Henriksen"
+        data-theme-version="0.6.0"
+        >theme: til</a
+      >
+    </div>
+</section>
+
+      </footer>
+    </div>
+    
+  </body>
+</html>

@@ -1,15 +1,51 @@
 {
   "graph": {
-    "/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/": {
+    "/notes/fundamental-principles-of-neuroimaging/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/introduction-to-eeg-and-event-related-potentials/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/introduction-to-structural-equation-modeling/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/mediation-effect-and-its-test/": {
+      "in": [],
+      "out": []
+    },
+    "/notes/moderated-mediation-and-its-test/": {
       "in": [],
       "out": []
     }
   },
   "pages": {
-    "/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/": {
-      "permalink": "/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/",
+    "/notes/fundamental-principles-of-neuroimaging/": {
+      "permalink": "/notes/fundamental-principles-of-neuroimaging/",
       "section": "notes",
-      "title": "How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing"
+      "title": "脑成像的基本原理"
+    },
+    "/notes/introduction-to-eeg-and-event-related-potentials/": {
+      "permalink": "/notes/introduction-to-eeg-and-event-related-potentials/",
+      "section": "notes",
+      "title": "EEG 和 ERP 简介"
+    },
+    "/notes/introduction-to-structural-equation-modeling/": {
+      "permalink": "/notes/introduction-to-structural-equation-modeling/",
+      "section": "notes",
+      "title": "结构方程模型简介"
+    },
+    "/notes/mediation-effect-and-its-test/": {
+      "permalink": "/notes/mediation-effect-and-its-test/",
+      "section": "notes",
+      "title": "中介效应及其检验"
+    },
+    "/notes/moderated-mediation-and-its-test/": {
+      "permalink": "/notes/moderated-mediation-and-its-test/",
+      "section": "notes",
+      "title": "带调节的中介效应及其检验"
     }
   }
 }

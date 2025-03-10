@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neuroimaging on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://burningsky0306.github.io/tags/neuroimaging/</link>
+    <description>Recent content in Neuroimaging on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
+    <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
+    <copyright>Jethro Vanbrook</copyright>
+    <lastBuildDate>Mon, 10 Mar 2025 22:10:00 +0800</lastBuildDate>
+    <atom:link href="https://burningsky0306.github.io/tags/neuroimaging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>脑成像的基本原理</title>
+      <link>https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/</link>
+      <pubDate>Mon, 10 Mar 2025 22:10:00 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/</guid>
+      <description>&lt;p&gt;本文介绍了以 BOLD 信号为基础的脑成像技术的基本原理、实验设计方法及其数据分析流程。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

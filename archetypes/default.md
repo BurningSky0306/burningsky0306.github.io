@@ -4,5 +4,10 @@ draft: false
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 categories: []
 tags: []
-math: 
+math: true
 ---
+
+
+
+<!--more-->
+

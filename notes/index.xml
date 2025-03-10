@@ -9,14 +9,42 @@
     <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Jethro Vanbrook</copyright>
-    <lastBuildDate>Thu, 06 Mar 2025 19:16:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 22:10:00 +0800</lastBuildDate>
     <atom:link href="https://burningsky0306.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing</title>
-      <link>https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/</link>
-      <pubDate>Thu, 06 Mar 2025 19:16:57 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/</guid>
-      <description>&lt;p&gt;This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.&lt;/p&gt;</description>
+      <title>脑成像的基本原理</title>
+      <link>https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/</link>
+      <pubDate>Mon, 10 Mar 2025 22:10:00 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/</guid>
+      <description>&lt;p&gt;本文介绍了以 BOLD 信号为基础的脑成像技术的基本原理、实验设计方法及其数据分析流程。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>EEG 和 ERP 简介</title>
+      <link>https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/</link>
+      <pubDate>Mon, 10 Mar 2025 22:01:35 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/</guid>
+      <description>&lt;p&gt;本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>结构方程模型简介</title>
+      <link>https://burningsky0306.github.io/notes/introduction-to-structural-equation-modeling/</link>
+      <pubDate>Mon, 10 Mar 2025 21:54:33 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/introduction-to-structural-equation-modeling/</guid>
+      <description>&lt;p&gt;本文介绍了结构方程模型的基本概念、组成要素和建立步骤，度量模型与结构模型的区别、自由度定义、模型拟合评估指标以及共同方法偏差的检验方法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>带调节的中介效应及其检验</title>
+      <link>https://burningsky0306.github.io/notes/moderated-mediation-and-its-test/</link>
+      <pubDate>Mon, 10 Mar 2025 21:45:35 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/moderated-mediation-and-its-test/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>中介效应及其检验</title>
+      <link>https://burningsky0306.github.io/notes/mediation-effect-and-its-test/</link>
+      <pubDate>Mon, 10 Mar 2025 21:27:08 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/mediation-effect-and-its-test/</guid>
+      <description>&lt;p&gt;本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

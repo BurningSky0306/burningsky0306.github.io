@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eeg on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://burningsky0306.github.io/tags/eeg/</link>
+    <description>Recent content in Eeg on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
+    <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
+    <copyright>Jethro Vanbrook</copyright>
+    <lastBuildDate>Mon, 10 Mar 2025 22:01:35 +0800</lastBuildDate>
+    <atom:link href="https://burningsky0306.github.io/tags/eeg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EEG 和 ERP 简介</title>
+      <link>https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/</link>
+      <pubDate>Mon, 10 Mar 2025 22:01:35 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/introduction-to-eeg-and-event-related-potentials/</guid>
+      <description>&lt;p&gt;本文介绍了 EEG 和 ERP 的基本原理、信号组成、电极放置、预处理步骤、分析方法及研究前沿，涵盖了从数据采集到成分分析的部分流程及傅里叶变换在脑电研究中的应用。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

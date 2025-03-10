@@ -1,0 +1,351 @@
+---
+date: '2025-03-10T22:10:00+08:00'
+draft: false
+title: '脑成像的基本原理'
+categories: ["psychology", "cognitive neuroscience"]
+tags: ["neuroimaging"]
+math: true
+---
+
+本文介绍了以 BOLD 信号为基础的脑成像技术的基本原理、实验设计方法及其数据分析流程。
+
+<!--more-->
+
+
+### 脑成像的生理基础
+
+神经活动血管耦合（耦合可以理解为相关），它实际上是通过神经活动和血液中的氧气或葡萄糖的活动的相关来间接成像的。其中利用葡萄糖成像的有 PET，利用氧气（含氧血红蛋白）成像得有 fMRI 和 fNIRS 
+
+### BOLD 信号
+
+BOLD 指 Blood-Oxygen Level Dependent 
+
+实际上记录 BOLD 信号时既可以记录含氧血红蛋白，也可以记录脱氧血红蛋白，但是优先记录含氧血红蛋白。原因如下：
+
+1. 神经活动会引发对应区域的含氧血红蛋白和脱氧血红蛋白的绝对值的上升，但含氧血红蛋白上升得更多，因此脱氧血红蛋白的相对上升值反而是负数。
+2. 含氧血红蛋白存在过补偿机制，也就是人体会往神经活动的地方运送比它实际需要的多得多的含氧血红蛋白。
+
+### 血流动力学响应方程
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102212088.png)
+
+血流动力学响应方程的英文全称为 Hemodynamic Response Function, HRF
+
+- HRF 的峰值反映了神经活动的强度
+- 大约 5s 左右达到峰值，20s 左右完成一个完整的 HRF
+
+## 脑科学实验设计方法
+
+### 事件相关设计
+
+事件相关设计的英文全称为 Event-Related Design
+
+它是指单独向被试呈现一个实验刺激后记录其神经信号变化，待信号恢复到基线水平后再给予下一个刺激，不断重复此步骤。
+
+该方法适用于脑电研究这种信号恢复到基线水平很快的研究，而 BOLD 信号存在滞后性，该信号在接收到了刺激之后重新恢复到基线水平长达 20s 之久，因此不适用于事件相关设计。
+
+但是前沿的一些研究发现可以通过一些复杂的数学分析方法，也能够将该设计应用于涉及 BOLD 信号的研究。
+
+### 组块设计
+
+组块设计的英文全称为 Blocked Desigh
+
+它是指将相同类型的试次多个捆绑在一起，在一段时间内只施加这一种类型的刺激，观察这一段时间内的叠加的 BOLD 信号。
+
+它的好处如下：
+
+1. 在一个区块中， BOLD 信号在达到峰值之后将会进入一个平台期，这个平台期的值是多个同类型刺激的叠加，因此将会比单个刺激所引发的 BOLD 信号的峰值更大，将会更有利于找到显著的效应，提高了统计效力。
+2. 可以不用等信号恢复到基线水平后再施加下一个刺激，克服了事件相关设计的缺点
+
+## BOLD 信号的数据分析
+
+BOLD 信号的数据分析采用的是一般线性（回归）模型，英文全称为 General Linear Model，GLM
+
+用公式表示为：
+
+$$y=\beta_{0}+\beta_{1}X+\epsilon$$
+
+\\(y\\)  表示 BOLD 信号在某一时刻下的快照，是实际测量值
+\\(\beta_{0}\\)  表示截距
+\\(\beta_{1}\\)  表示斜率，是实验处理效应
+\\(X\\)  表示实验处理水平，视具体的实验设计而定
+\\(\epsilon\\)  则是模型估计的误差
+
+在这个公式中，\\(y\\)  是实际测量值，\\(X\\)  是某个 \\(y\\)  所对应的实验处理水平，其根据具体的实验处理水平数为其赋值，例如一个单因素两水平实验设计，\\(X\\)  就可以采用虚无编码，取 0 或 1，但是更多水平的赋值则会更加复杂，具体参见后文。
+
+有多少个 \\(y\\)  就能够构建多少个方程，如下所示
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102339812.png)
+
+```KaTex
+\begin{aligned}
+y_1 &= \beta_0 + \beta_1X_1 + \varepsilon_1 \\
+y_2 &= \beta_0 + \beta_1X_2 + \varepsilon_2 \\
+y_3 &= \beta_0 + \beta_1X_3 + \varepsilon_3 \\
+y_4 &= \beta_0 + \beta_1X_4 + \varepsilon_4 \\
+y_5 &= \beta_0 + \beta_1X_5 + \varepsilon_5 \\
+y_6 &= \beta_0 + \beta_1X_6 + \varepsilon_6 \\
+y_7 &= \beta_0 + \beta_1X_7 + \varepsilon_7 \\
+\end{aligned}
+```
+
+可以将上述方程转化为如下的向量形式
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102341134.png)
+
+```KaTex
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3 \\
+y_4 \\
+y_5 \\
+y_6 \\
+y_7
+\end{bmatrix}
+= \beta_0
+\begin{bmatrix}
+1 \\
+1 \\
+1 \\
+1 \\
+1 \\
+1 \\
+1
+\end{bmatrix}
++ \beta_1
+\begin{bmatrix}
+X_1 \\
+X_2 \\
+X_3 \\
+X_4 \\
+X_5 \\
+X_6 \\
+X_7
+\end{bmatrix}
++
+\begin{bmatrix}
+\varepsilon_1 \\
+\varepsilon_2 \\
+\varepsilon_3 \\
+\varepsilon_4 \\
+\varepsilon_5 \\
+\varepsilon_6 \\
+\varepsilon_7
+\end{bmatrix}
+```
+
+然后可以进一步转化为如下的形式
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102346486.png)
+
+```KaTex
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3 \\
+y_4 \\
+y_5 \\
+y_6 \\
+y_7
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & X_1 \\
+1 & X_2 \\
+1 & X_3 \\
+1 & X_4 \\
+1 & X_5 \\
+1 & X_6 \\
+1 & X_7
+\end{bmatrix}
+\begin{bmatrix}
+\beta_0 \\
+\beta_1
+\end{bmatrix}
++
+\begin{bmatrix}
+\varepsilon_1 \\
+\varepsilon_2 \\
+\varepsilon_3 \\
+\varepsilon_4 \\
+\varepsilon_5 \\
+\varepsilon_6 \\
+\varepsilon_7
+\end{bmatrix}
+```
+
+最后可以将其用如下所示的形式表示
+
+$$Y=X\beta+\epsilon$$
+
+其中 \\(Y\\)  代表原始数据构成的矩阵，称之为原始数据矩阵，有多少张 BOLD 信号的快照 \\(Y\\)  就能取到到多少个值。\\(X\\)  代表实验设计中不同的实验水平所组成的矩阵，称之为设计矩阵，有多少个实验水平\\(X\\)  就能取到多少个值。\\(\beta\\)  代表模型的截距和斜率构成的矩阵，称之为 \\(\beta\\)  矩阵，需要利用根据 \\(Y\\)  和 \\(X\\)  建立的方程求解。\\(\epsilon\\)  也就是模型估计的误差，被称为残差矩阵。
+
+在实际的数据分析过程中，只需要向 MATLAB 中的 EEGLAB 插件提供 \\(Y\\)  矩阵和 \\(X\\)  矩阵的数据即可求解。
+
+### 设计矩阵的编码
+
+如果实验关注的变量的实验水平超过 2 个水平，那么就需要引入哑变量来对自变量进行编码。哑变量的英文全称为 Dummy Variable, 下面以单因素三水平实验设计为例。
+
+原始的一元线性回归模型的形式为
+
+$$Y=X\beta+\epsilon$$
+
+其中 \\(X\\)  表示水平数为 3 的设计矩阵，然后引入哑变量后回归模型就变为了下图的形式（经过了标准化，去掉了截距）
+
+$$y=\beta_{1}X_{1}+\beta_{2}X_{2}+\beta_{3}X_{3}+\epsilon$$
+
+其中 \\(X_{1}\\) , \\(X_{2}\\) , \\(X_{3}\\)  分别代表自变量 \\(X\\)  的三个水平，它们各自能够取值 0 或 1。对于 \\(X_{1}=0\\) ，表示不接受水平 1 的处理，\\(X_{1}=1\\)  则表示接受水平 1 的处理，二者可以相反。\\(X_{2}\\)  和 \\(X_{3}\\)  同理。
+
+所以，这三个变量的取值只可能是下面的三种情况之一
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102347690.png)
+
+```KaTex
+\begin{bmatrix}
+1, & 0, & 0 \\
+0, & 1, & 0 \\
+0, & 0, & 1
+\end{bmatrix}
+```
+
+基线代表的情况则为
+
+$$[0, 0, 0]$$
+
+\\(\beta_{1}\\) ，\\(\beta_{2}\\) ，\\(\beta_{3}\\)  分别表示从基线水平变化到接受水平 1 的处理，接受水平 2 的处理或接受水平 3 的处理所带来的效应。它们之间的差值则表示实验水平之间的变化所带来的效应改变。
+
+上述的变换也可以用矩阵形式来表达
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102348441.png)
+
+```KaTex
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3 \\
+y_4 \\
+y_5 \\
+y_6 \\
+y_7 \\
+y_8 \\
+y_9
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 0 & 0 \\
+1 & 0 & 0 \\
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+0 & 0 & 1 \\
+0 & 0 & 1
+\end{bmatrix}
+\begin{bmatrix}
+\beta_1 \\
+\beta_2 \\
+\beta_3
+\end{bmatrix}
++
+\begin{bmatrix}
+\epsilon_1 \\
+\epsilon_2 \\
+\epsilon_3 \\
+\epsilon_4 \\
+\epsilon_5 \\
+\epsilon_6 \\
+\epsilon_7 \\
+\epsilon_8 \\
+\epsilon_9
+\end{bmatrix}
+```
+
+其中 \\(y_{1}\\)  到 \\(y_{3}\\)  都表示接受水平 1 的处理，\\(y_{4}\\)  到 \\(y_{9}\\)  同理。
+
+其中，下图中的矩阵可以用对比向量 \\(C^{T}\\)  来表示
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102350030.png)
+
+```KaTex
+\begin{bmatrix}
+1 & 0 & 0 \\
+1 & 0 & 0 \\
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1 \\
+0 & 0 & 1 \\
+0 & 0 & 1
+\end{bmatrix}
+```
+
+
+例如，当 \\(C^{T}=[-1, 0, 1]\\)  时，就代表 \\(y=\beta_{3}-\beta_{1}\\)  ，计算水平 3 和水平 1 的实验效应之差。
+
+综上所述，每一个哑变量就代表了自变量的一个水平，其取值只为 0 或 1，表示是否接受该水平的处理。无论自变量有多少个，只要所有的自变量所构成的水平数为 N， 那么就有 N 个哑变量。
+
+如果实验设计为两因素四水平 2×2 实验设计，那么其一般线性回归模型的表达就如下方所示（数据标准化处理，没有协变量）
+
+$$y=\beta_{1}X_{1}+\beta_{2}X_{2}+\beta_{3}X_{3}+\beta_{4}X_{4}+\epsilon$$
+
+其中\\(\beta_{1}, \beta_{2}, \beta_{3}, \beta_{4}\\)  分别表示实验处理水平 A1B1, A1B2, A2B1, A2B2
+
+如果想求出自变量 A 的主效应，那么就是 (A1B1+A1B2)/2 - (A2B1+A2B2)/2，此时对比向量就可以设置为 \\(C^{T}=[0.5, 0.5, -0.5, -0.5]\\)  ，求出自变量 B 的主效应同理
+
+若要求出 A 和 B 的交互效应，那么就需要先分别计算 A1 和 A2 的简单主效应，比较两个简单主效应的差值与零相比，其差异是否显著。
+
+具体的计算步骤为令 \\(C_{1}^{T}=[1, -1, 0, 0]\\) ，\\(C_{2}^{T}=[0, 0, 1, -1]\\) ，求出\\(\Delta{y}=y_{1}-y_{2}=C_{1}^{T}\beta-C_{2}^{T}\beta+\epsilon\\)  的数值，其就反映了 A 和 B 是否存在交互效应。
+
+此外，这种结合矩阵和向量的一般线性回归模型也能够分层回归和加入连续变量，例如下方的矩阵
+
+![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102351900.png)
+
+```KaTex
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3 \\
+y_4 \\
+y_5 \\
+y_6 \\
+y_7 \\
+y_8 \\
+y_9
+\end{bmatrix}
+=
+\begin{bmatrix}
+1 & 1 & 0 & 0 & x_1 \\
+1 & 1 & 0 & 0 & x_2 \\
+1 & 1 & 0 & 0 & x_3 \\
+1 & 0 & 1 & 0 & x_4 \\
+1 & 0 & 1 & 0 & x_5 \\
+1 & 0 & 1 & 0 & x_6 \\
+1 & 0 & 0 & 1 & x_7 \\
+1 & 0 & 0 & 1 & x_8 \\
+1 & 0 & 0 & 1 & x_9
+\end{bmatrix}
+\begin{bmatrix}
+\beta_0 \\
+\beta_1 \\
+\beta_2 \\
+\beta_3 \\
+\beta_4
+\end{bmatrix}
++
+\begin{bmatrix}
+\epsilon_1 \\
+\epsilon_2 \\
+\epsilon_3 \\
+\epsilon_4 \\
+\epsilon_5 \\
+\epsilon_6 \\
+\epsilon_7 \\
+\epsilon_8 \\
+\epsilon_9
+\end{bmatrix}
+```
+
+其中，\\(\beta_{0}\\)  与设计矩阵 \\(X\\)  的第一列相乘表示截距。第二列到第四列表示哑变量。第五列是协变量，可以是连续数据，例如智商。分层回归则是指可以先建立设计矩阵 \\(X\\)  只包含第五列协变量的模型，然后再加入后续的哑变量，进行模型比较，计算 \\(F\\)  值和斜率显著性。

@@ -8,33 +8,34 @@
 <meta name="language" content="en" />
 <meta name="viewport" content="width=device-width" />
 <title>
-    How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing | Jethro Vanbrook&#39;s Blog
+    中介效应及其检验 | Jethro Vanbrook&#39;s Blog
 </title>
-  <meta name="description" content="This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design." />
-<meta property="og:url" content="https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/">
+  <meta name="description" content="本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。" />
+<meta property="og:url" content="https://burningsky0306.github.io/notes/mediation-effect-and-its-test/">
   <meta property="og:site_name" content="Jethro Vanbrook&#39;s Blog">
-  <meta property="og:title" content="How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing">
-  <meta property="og:description" content="This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.">
+  <meta property="og:title" content="中介效应及其检验">
+  <meta property="og:description" content="本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="notes">
-    <meta property="article:published_time" content="2025-03-06T19:16:57+08:00">
-    <meta property="article:modified_time" content="2025-03-06T19:16:57+08:00">
+    <meta property="article:published_time" content="2025-03-10T21:27:08+08:00">
+    <meta property="article:modified_time" content="2025-03-10T21:27:08+08:00">
     <meta property="article:tag" content="Regression Analysis">
+    <meta property="article:tag" content="Mediation">
 
 
-  <meta itemprop="name" content="How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing">
-  <meta itemprop="description" content="This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.">
-  <meta itemprop="datePublished" content="2025-03-06T19:16:57+08:00">
-  <meta itemprop="dateModified" content="2025-03-06T19:16:57+08:00">
-  <meta itemprop="wordCount" content="209">
-  <meta itemprop="keywords" content="Regression Analysis">
+  <meta itemprop="name" content="中介效应及其检验">
+  <meta itemprop="description" content="本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。">
+  <meta itemprop="datePublished" content="2025-03-10T21:27:08+08:00">
+  <meta itemprop="dateModified" content="2025-03-10T21:27:08+08:00">
+  <meta itemprop="wordCount" content="58">
+  <meta itemprop="keywords" content="Regression Analysis,Mediation">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing">
-  <meta name="twitter:description" content="This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.">
+  <meta name="twitter:title" content="中介效应及其检验">
+  <meta name="twitter:description" content="本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。">
 
-<link rel="canonical" href="https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/" />
+<link rel="canonical" href="https://burningsky0306.github.io/notes/mediation-effect-and-its-test/" />
 
       <link
         rel="stylesheet"
@@ -84,7 +85,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
-  "@id": "https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/",
+  "@id": "https://burningsky0306.github.io/notes/mediation-effect-and-its-test/",
   "@type": "BlogPosting",
   "articleSection": [
     "Psychology",
@@ -96,22 +97,23 @@
     "name": "Fan Jianbo"
   },
   "copyrightNotice": "Jethro Vanbrook",
-  "datePublished": "2025-03-06",
-  "description": "This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\\(SS_{\\text{residual}} = \\sum{(\\hat{y}-y)^2}\\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \\(R^2\\) and adjusted mean squared error (\\(MS_{\\text{error}}\\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.",
-  "headline": "How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing",
+  "datePublished": "2025-03-10",
+  "description": "本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。",
+  "headline": "中介效应及其检验",
   "isPartOf": {
     "@id": "https://burningsky0306.github.io/notes/",
     "@type": "Blog",
     "name": "Notes"
   },
   "keywords": [
+    "Mediation",
     "Regression Analysis"
   ],
-  "mainEntityOfPage": "https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/",
-  "name": "How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing",
+  "mainEntityOfPage": "https://burningsky0306.github.io/notes/mediation-effect-and-its-test/",
+  "name": "中介效应及其检验",
   "timeRequired": "PT1M",
-  "url": "https://burningsky0306.github.io/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/",
-  "wordCount": 209
+  "url": "https://burningsky0306.github.io/notes/mediation-effect-and-its-test/",
+  "wordCount": 58
 }
 </script>
 
@@ -147,135 +149,18 @@
       <main class="prose prose-slate relative md:prose-lg prose-h1:text-[2em]" id="maincontent">
         <article class="main">
     <header>
-      <h1 class="!mb-1">How to Build and Compare Statistical Models Through Regression Analysis and Significance Testing</h1><div class="flex flex-row items-center space-x-4">
-          <time class="text-sm italic opacity-80" datetime="2025-03-06T19:16:57&#43;08:00"
-            >March 6, 2025</time
+      <h1 class="!mb-1">中介效应及其检验</h1><div class="flex flex-row items-center space-x-4">
+          <time class="text-sm italic opacity-80" datetime="2025-03-10T21:27:08&#43;08:00"
+            >March 10, 2025</time
           >
         </div>
     </header>
 
-    <p>This article systematically examines the fundamentals of linear regression modeling and statistical validation. It introduces the one-variable linear regression framework, emphasizing its construction via least squares optimization to minimize prediction errors (\(SS_{\text{residual}} = \sum{(\hat{y}-y)^2}\)). The analysis highlights significance testing (t-tests for slope parameters, F-tests for model comparisons) and critical metrics like \(R^2\) and adjusted mean squared error (\(MS_{\text{error}}\)) that balance prediction accuracy against model complexity. A key focus is hierarchical regression, demonstrating how covariate-controlled models enhance robustness in identifying meaningful predictors. The discussion further underscores the value of multi-dimensional operational definitions (e.g., physiological/behavioral metrics) for reinforcing result reliability. Practical guidelines for interpreting degrees of freedom, model comparisons, and error decomposition provide actionable insights for empirical research design.</p>
-<h2 id="模型构建与比较核心内容总结" class="scroll-mt-8 group">
-  模型构建与比较核心内容总结
+    <p>本文介绍了中介效应的概念与检验方法，包括中介效应的多种定义、模型构建原则及检验步骤。</p>
+<h4 id="当两个变量相关时可能的情况" class="scroll-mt-8 group">
+  当两个变量相关时，可能的情况
   
-    <a href="#%e6%a8%a1%e5%9e%8b%e6%9e%84%e5%bb%ba%e4%b8%8e%e6%af%94%e8%be%83%e6%a0%b8%e5%bf%83%e5%86%85%e5%ae%b9%e6%80%bb%e7%bb%93"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h2>
-<h3 id="一一元线性回归模型基础" class="scroll-mt-8 group">
-  一、一元线性回归模型基础
-  
-    <a href="#%e4%b8%80%e4%b8%80%e5%85%83%e7%ba%bf%e6%80%a7%e5%9b%9e%e5%bd%92%e6%a8%a1%e5%9e%8b%e5%9f%ba%e7%a1%80"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<ul>
-<li><strong>定义</strong>：使用单个预测变量(X)预测结果变量(y)的线性模型</li>
-<li><strong>模型表达式</strong>：
-<ul>
-<li>预测值：\(\hat{y}=b+aX\)</li>
-<li>真实值：\(y=b+aX+\epsilon\)</li>
-</ul>
-</li>
-</ul>
-<h3 id="二最小二乘法核心公式" class="scroll-mt-8 group">
-  二、最小二乘法核心公式
-  
-    <a href="#%e4%ba%8c%e6%9c%80%e5%b0%8f%e4%ba%8c%e4%b9%98%e6%b3%95%e6%a0%b8%e5%bf%83%e5%85%ac%e5%bc%8f"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<ul>
-<li><strong>预测误差指标</strong>：
-<ul>
-<li>组内平方和：\(SS_{组内} = \sum{(\hat{y}-y)}^{2}\)</li>
-<li>回归平方和：\(SS_{回归} = \sum{(\hat{y}-\bar{y})}^{2}\)</li>
-</ul>
-</li>
-</ul>
-<h3 id="三模型显著性检验" class="scroll-mt-8 group">
-  三、模型显著性检验
-  
-    <a href="#%e4%b8%89%e6%a8%a1%e5%9e%8b%e6%98%be%e8%91%97%e6%80%a7%e6%a3%80%e9%aa%8c"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<h4 id="1-检验方法" class="scroll-mt-8 group">
-  1. 检验方法
-  
-    <a href="#1-%e6%a3%80%e9%aa%8c%e6%96%b9%e6%b3%95"
+    <a href="#%e5%bd%93%e4%b8%a4%e4%b8%aa%e5%8f%98%e9%87%8f%e7%9b%b8%e5%85%b3%e6%97%b6%e5%8f%af%e8%83%bd%e7%9a%84%e6%83%85%e5%86%b5"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -298,13 +183,18 @@
   
 </h4>
 <ul>
-<li>t检验（斜率a）：若\(a \neq 0\)显著，则模型有效</li>
-<li>F检验：\(F=\frac{MS_{回归}}{MS_{组内}} = \frac{\frac{SS_{回归}}{df_{回归}}}{\frac{SS_{组内}}{df_{组内}}}\)</li>
+<li>A是B的因</li>
+<li>B是A的因</li>
+<li>A和B互为因果</li>
+<li>存在第三个变量同时影响A和B</li>
+<li>A和B只有相关关系，没有因果关系</li>
+<li>A是B的因，但是存在滞后效应，反之亦然</li>
+<li>由上面的几种简单情况任意组合而成的复杂模型</li>
 </ul>
-<h4 id="2-检验本质" class="scroll-mt-8 group">
-  2. 检验本质
+<h4 id="中介效应检验的原则" class="scroll-mt-8 group">
+  中介效应检验的原则
   
-    <a href="#2-%e6%a3%80%e9%aa%8c%e6%9c%ac%e8%b4%a8"
+    <a href="#%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e6%a3%80%e9%aa%8c%e7%9a%84%e5%8e%9f%e5%88%99"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -327,65 +217,13 @@
   
 </h4>
 <ul>
-<li>比较预测模型与基准模型\(\hat{y}=\bar{y}\)的差异</li>
-<li>模型选择原则：在复杂度与预测准确率间寻求平衡</li>
+<li>构建模型并检验其显著性时，一定要有理论指导，而非纯数据驱动</li>
+<li>当预测变量之间存在共线性时，可能性有很多种，具体是哪一种一定要看理论指导，而非拼凑数据</li>
 </ul>
-<h3 id="四模型评价指标" class="scroll-mt-8 group">
-  四、模型评价指标
+<h4 id="做模型构建相关的研究时应该注意的点" class="scroll-mt-8 group">
+  做模型构建相关的研究时应该注意的点
   
-    <a href="#%e5%9b%9b%e6%a8%a1%e5%9e%8b%e8%af%84%e4%bb%b7%e6%8c%87%e6%a0%87"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<h4 id="1-决定系数" class="scroll-mt-8 group">
-  1. 决定系数
-  
-    <a href="#1-%e5%86%b3%e5%ae%9a%e7%b3%bb%e6%95%b0"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>$$ R^{2} = \eta^{2} = \frac{SS_{回归}}{SS_{总}} = \frac{SS_{回归}}{SS_{回归}+SS_{组内}} $$
-<strong>缺点</strong>：未考虑模型复杂度</p>
-<h4 id="2-自由度计算" class="scroll-mt-8 group">
-  2. 自由度计算
-  
-    <a href="#2-%e8%87%aa%e7%94%b1%e5%ba%a6%e8%ae%a1%e7%ae%97"
+    <a href="#%e5%81%9a%e6%a8%a1%e5%9e%8b%e6%9e%84%e5%bb%ba%e7%9b%b8%e5%85%b3%e7%9a%84%e7%a0%94%e7%a9%b6%e6%97%b6%e5%ba%94%e8%af%a5%e6%b3%a8%e6%84%8f%e7%9a%84%e7%82%b9"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -408,70 +246,15 @@
   
 </h4>
 <ul>
-<li><strong>通用公式</strong>：\(df = n - k - 1\)</li>
-<li>实例：
-<ul>
-<li>常数模型：\(df = n-1\)</li>
-<li>一元线性回归：\(df = n-2\)</li>
+<li>在收集关心的变量的数据的基础上，根据理论提前猜测可能导致关注的变量发生共变的第三变量，在收数据时注意一起收了</li>
+<li>如果事后进行数据分析的事后发现缺少关键变量的数据，那么应该结合理论在讨论部分论述</li>
 </ul>
-</li>
-</ul>
-<h3 id="五模型复杂度考量" class="scroll-mt-8 group">
-  五、模型复杂度考量
+<p>Mediation: 中介</p>
+<p>Moderation: 调节</p>
+<h4 id="中介效应的定义" class="scroll-mt-8 group">
+  中介效应的定义
   
-    <a href="#%e4%ba%94%e6%a8%a1%e5%9e%8b%e5%a4%8d%e6%9d%82%e5%ba%a6%e8%80%83%e9%87%8f"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h3>
-<h4 id="1-均方误差" class="scroll-mt-8 group">
-  1. 均方误差
-  
-    <a href="#1-%e5%9d%87%e6%96%b9%e8%af%af%e5%b7%ae"
-        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
-        aria-hidden="true" title="Link to this heading" tabindex="-1">
-        <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-    </a>
-  
-</h4>
-<p>$$ MS_{误差} = \frac{SS_{误差}}{df_{误差}} $$
-<strong>特点</strong>：同时反映预测误差和模型复杂度</p>
-<h4 id="2-f值优势" class="scroll-mt-8 group">
-  2. F值优势
-  
-    <a href="#2-f%e5%80%bc%e4%bc%98%e5%8a%bf"
+    <a href="#%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e7%9a%84%e5%ae%9a%e4%b9%89"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -494,17 +277,15 @@
   
 </h4>
 <ul>
-<li>同时考虑：
-<ul>
-<li>预测误差（通过SS）</li>
-<li>模型复杂度（通过df）</li>
+<li>文字定义：预测变量对结果变量的影响存在一条路径，即预测变量先影响中介变量，再通过中介变量来影响结果变量</li>
+<li>模型定义：在模型图中，只要某变量被其它变量预测，那么该变量就会存在预测误差<img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102132700.png" alt=""></li>
+<li>公式定义：<img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102132476.png" alt=""></li>
 </ul>
-</li>
-</ul>
-<h3 id="六分层回归分析" class="scroll-mt-8 group">
-  六、分层回归分析
+<p>为什么在上面的这个公式里面不存在常数项：因为一般情况下我们在构建模型之前都已经把数据标准化了，那么模型就一定过（预测变量平均数，结果变量平均数）这个点，因此就没有截距</p>
+<h4 id="术语解释" class="scroll-mt-8 group">
+  术语解释
   
-    <a href="#%e5%85%ad%e5%88%86%e5%b1%82%e5%9b%9e%e5%bd%92%e5%88%86%e6%9e%90"
+    <a href="#%e6%9c%af%e8%af%ad%e8%a7%a3%e9%87%8a"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -525,11 +306,18 @@
 
     </a>
   
-</h3>
-<h4 id="1-实施步骤" class="scroll-mt-8 group">
-  1. 实施步骤
+</h4>
+<ul>
+<li>X-M-Y：间接效应</li>
+<li>X-Y：直接效应</li>
+<li>完全中介效应：只有一条间接效应路径存在</li>
+<li>部分中介效应：除了存在一条间接效应路径，还存在直接效应、其他的间接效应或二者都有。真实情况是部分中介更常见。</li>
+<li>没有中介效应：不存在任何间接效应路径</li>
+</ul>
+<h4 id="中介效应检验的步骤" class="scroll-mt-8 group">
+  中介效应检验的步骤
   
-    <a href="#1-%e5%ae%9e%e6%96%bd%e6%ad%a5%e9%aa%a4"
+    <a href="#%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e6%a3%80%e9%aa%8c%e7%9a%84%e6%ad%a5%e9%aa%a4"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -552,15 +340,41 @@
   
 </h4>
 <ol>
-<li>构建基准模型（含K个协变量）</li>
-<li>加入目标变量构建新模型</li>
-<li>通过F检验比较模型改进：
-$$ F = \frac{(SS_{基准}-SS_{新})/(df_{新}-df_{基准})}{SS_{新}/df_{新}} $$</li>
+<li>先检验间接效应，确定是否存在中介效应</li>
+<li>在存在中介效应的基础上检验直接效应，确定是部分中介还是完全中介</li>
+<li>在中介模型的建立中，模型中存在多少个变量被预测，就有多少个回归模型，需要挨个检验每个模型是否显著，先检验每个模型整体的显著性，再检验模型中每个预测变量的斜率的显著性，最终得出结论</li>
 </ol>
-<h4 id="2-协变量作用" class="scroll-mt-8 group">
-  2. 协变量作用
+<h4 id="中介效应检验中的掩蔽效应" class="scroll-mt-8 group">
+  中介效应检验中的掩蔽效应
   
-    <a href="#2-%e5%8d%8f%e5%8f%98%e9%87%8f%e4%bd%9c%e7%94%a8"
+    <a href="#%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e6%a3%80%e9%aa%8c%e4%b8%ad%e7%9a%84%e6%8e%a9%e8%94%bd%e6%95%88%e5%ba%94"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>如存在“X-M-Y“和”X-Y“的大小相等，符号相反，那么直接测量X和Y之间的关系就是不相关的，但是实际上存在部分中介效应，只不过间接效应和直接效应抵消了。</p>
+<p>为什么在中介模型中”X-Y“这条路径的系数要写成 c&rsquo; 就是因为省略了对X和Y之间的相关的检验（这条路径的系数是 c ）</p>
+<h4 id="协方差分析的优缺点" class="scroll-mt-8 group">
+  协方差分析的优缺点
+  
+    <a href="#%e5%8d%8f%e6%96%b9%e5%b7%ae%e5%88%86%e6%9e%90%e7%9a%84%e4%bc%98%e7%bc%ba%e7%82%b9"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -583,13 +397,13 @@ $$ F = \frac{(SS_{基准}-SS_{新})/(df_{新}-df_{基准})}{SS_{新}/df_{新}} $
   
 </h4>
 <ul>
-<li>控制年龄/性别等无关变量</li>
-<li>增强模型说服力：当新模型显著时，说明目标变量具有独立预测效应</li>
+<li>优点：能够更好地控制无关变量，提高模型内部效度</li>
+<li>缺点：降低统计效力，结果更难显著</li>
 </ul>
-<h3 id="七操作性定义验证" class="scroll-mt-8 group">
-  七、操作性定义验证
+<h4 id="中介效应检验可能存在错误累加的问题" class="scroll-mt-8 group">
+  中介效应检验可能存在错误累加的问题
   
-    <a href="#%e4%b8%83%e6%93%8d%e4%bd%9c%e6%80%a7%e5%ae%9a%e4%b9%89%e9%aa%8c%e8%af%81"
+    <a href="#%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e6%a3%80%e9%aa%8c%e5%8f%af%e8%83%bd%e5%ad%98%e5%9c%a8%e9%94%99%e8%af%af%e7%b4%af%e5%8a%a0%e7%9a%84%e9%97%ae%e9%a2%98"
         class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
         aria-hidden="true" title="Link to this heading" tabindex="-1">
         <svg
@@ -610,19 +424,42 @@ $$ F = \frac{(SS_{基准}-SS_{新})/(df_{新}-df_{基准})}{SS_{新}/df_{新}} $
 
     </a>
   
-</h3>
-<ul>
-<li><strong>实施方法</strong>：对同一概念采用不同测量指标（如生理/心理/行为指标）</li>
-<li><strong>优势</strong>：
-<ul>
-<li>增强结果可重复性</li>
-<li>提高结论可信度（如用心率和皮质醇双指标测量应激）</li>
-</ul>
-</li>
-</ul>
-<blockquote>
-<p>注：所有公式中的符号定义<br>
-n=样本量，k=预测变量数，\(\bar{y}\)=y的均值，\(\epsilon\)=随机误差</p></blockquote>
+</h4>
+<p>这是因为中介效应检验至少都要进行两次检验，那么每次检验都可能犯一类错误或二类错误，所以就会存在两种错误的累加问题。</p>
+<p>但是我们更关注二类错误累加的问题，因为我们进行中介效应检验是有研究的前提假设的，研究者一般比较确信模型是存在的，才回去收集数据并统计分析，所以对于犯一类错误而言，犯二类错误是研究者更不希望看到的。</p>
+<p>由于二类错误累加的问题，这就会导致统计效力下降，所以中介效应检验是会导致统计效力下降的，更难检测出本应该存在的效应。</p>
+<h4 id="四种一次性进行中介效应检验的方法" class="scroll-mt-8 group">
+  四种一次性进行中介效应检验的方法
+  
+    <a href="#%e5%9b%9b%e7%a7%8d%e4%b8%80%e6%ac%a1%e6%80%a7%e8%bf%9b%e8%a1%8c%e4%b8%ad%e4%bb%8b%e6%95%88%e5%ba%94%e6%a3%80%e9%aa%8c%e7%9a%84%e6%96%b9%e6%b3%95"
+        class="no-underline hidden opacity-50 hover:opacity-100 !text-inherit group-hover:inline-block"
+        aria-hidden="true" title="Link to this heading" tabindex="-1">
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="16"
+  height="16"
+  fill="none"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  class="lucide lucide-link w-4 h-4 block"
+  viewBox="0 0 24 24"
+>
+  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+</svg>
+
+    </a>
+  
+</h4>
+<p>为了实现一次性完成中介效应检验，避免统计效力降低的问题，可以直接检验间接路径上的两个斜率的乘积是否为零，若不为零则说明存在间接路径。</p>
+<ol>
+<li>\(\hat{a}\hat{b}\) 法：假设两个斜率的预测值是两个正态分布的变量的乘积，从而得到二者的抽样分布</li>
+<li>马尔科夫链-蒙特卡洛法 MCMC</li>
+<li>Sobel 法：假设两个斜率的乘积是正态分布的，从而得到二者的抽样分布</li>
+<li>Bootstrap 法：一种非参数检验方法。它要求大样本，且检验结果可能不稳定</li>
+</ol>
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
     <section class="flex flex-col space-y-4">
@@ -684,6 +521,9 @@ n=样本量，k=预测变量数，\(\bar{y}\)=y的均值，\(\epsilon\)=随机�
           <li>
             <a href="/tags/regression-analysis/" class="taxonomy tag">regression analysis</a>
           </li>
+          <li>
+            <a href="/tags/mediation/" class="taxonomy tag">mediation</a>
+          </li>
       </ul>
     </section>
     <section class="flex flex-col space-y-4" aria-hidden="true">
@@ -713,7 +553,7 @@ n=样本量，k=预测变量数，\(\bar{y}\)=y的均值，\(\epsilon\)=随机�
       <content-network-graph
   class="h-64 ml-6"
   data-endpoint="/graph/index.json"
-  page="/notes/how-to-build-and-compare-statistical-models-through-regression-analysis-and-significance-testing/"
+  page="/notes/mediation-effect-and-its-test/"
 ></content-network-graph>
 
     </section>
