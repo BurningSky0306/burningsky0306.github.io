@@ -158,7 +158,7 @@
 
     <p>本文介绍了结构方程模型的基本概念、组成要素和建立步骤，度量模型与结构模型的区别、自由度定义、模型拟合评估指标以及共同方法偏差的检验方法。</p>
 <p>一般情况下，如果调节效应没有调节间接路径而是只调节了直接路径，那么就不算是带调节的中介模型。</p>
-<h5 id="中介和调节模型的检验步骤" class="scroll-mt-8 group">
+<h3 id="中介和调节模型的检验步骤" class="scroll-mt-8 group">
   中介和调节模型的检验步骤
   
     <a href="#%e4%b8%ad%e4%bb%8b%e5%92%8c%e8%b0%83%e8%8a%82%e6%a8%a1%e5%9e%8b%e7%9a%84%e6%a3%80%e9%aa%8c%e6%ad%a5%e9%aa%a4"
@@ -182,14 +182,14 @@
 
     </a>
   
-</h5>
+</h3>
 <ol>
 <li>绘制变量之间的路径图</li>
 <li>根据被预测的变量数量写出相应数量的回归方程</li>
 <li>对整个回归模型和各项变量的斜率进行显著性检验</li>
 <li>若检验结果表明存在间接路径不显著，则进一步使用 Bootstrap 法进行显著性检验，计算置信区间，若不含零则显著，进一步计算 indirect effect</li>
 </ol>
-<h4 id="结构方程模型简介" class="scroll-mt-8 group">
+<h3 id="结构方程模型简介" class="scroll-mt-8 group">
   结构方程模型简介
   
     <a href="#%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%e7%ae%80%e4%bb%8b"
@@ -213,8 +213,8 @@
 
     </a>
   
-</h4>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102156679.png" alt=""></p>
+</h3>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690194901.png" alt=""></p>
 <ol>
 <li>结构方程模型包含度量模型和结构模型，度量模型只包含显变量，结构模型只包含潜变量。</li>
 <li>上图中的方块表示显变量，是实际测量值；椭圆表示潜变量，并非实际测量值，但是会影响显变量的测量值，是心理变量。</li>
@@ -223,7 +223,7 @@
 <li>度量模型可以用公式 “显变量=斜率×潜变量+预测误差”来表示。</li>
 <li>传统的中介调节模型可以被视为路径模型。</li>
 </ol>
-<h4 id="结构方程模型的建立步骤" class="scroll-mt-8 group">
+<h3 id="结构方程模型的建立步骤" class="scroll-mt-8 group">
   结构方程模型的建立步骤
   
     <a href="#%e7%bb%93%e6%9e%84%e6%96%b9%e7%a8%8b%e6%a8%a1%e5%9e%8b%e7%9a%84%e5%bb%ba%e7%ab%8b%e6%ad%a5%e9%aa%a4"
@@ -247,7 +247,7 @@
 
     </a>
   
-</h4>
+</h3>
 <ol>
 <li>建立理论模型</li>
 <li>判断当前的数据是否支持构建如此复杂的结构方程模型</li>
@@ -255,7 +255,7 @@
 <li>模型的评估和修正，比较模型与数据的拟合情况</li>
 <li>若模型拟合良好则需要解释模型，若拟合情况很差则应该修正模型</li>
 </ol>
-<h4 id="结构模型和度量模型的建立方法" class="scroll-mt-8 group">
+<h3 id="结构模型和度量模型的建立方法" class="scroll-mt-8 group">
   结构模型和度量模型的建立方法
   
     <a href="#%e7%bb%93%e6%9e%84%e6%a8%a1%e5%9e%8b%e5%92%8c%e5%ba%a6%e9%87%8f%e6%a8%a1%e5%9e%8b%e7%9a%84%e5%bb%ba%e7%ab%8b%e6%96%b9%e6%b3%95"
@@ -279,10 +279,10 @@
 
     </a>
   
-</h4>
+</h3>
 <p>结构模型：完全依靠理论和研究假设来建立</p>
 <p>度量模型：如果使用经过验证且有明确维度的问卷来收集数据，那么直接沿用问卷给定维度即可。如果使用自编问卷或行为数据，那么需要进行 EFA 。后续度量模型的建立实际上是在进行 CFA</p>
-<h4 id="自由度的真正定义" class="scroll-mt-8 group">
+<h3 id="自由度的真正定义" class="scroll-mt-8 group">
   自由度的真正定义
   
     <a href="#%e8%87%aa%e7%94%b1%e5%ba%a6%e7%9a%84%e7%9c%9f%e6%ad%a3%e5%ae%9a%e4%b9%89"
@@ -306,10 +306,10 @@
 
     </a>
   
-</h4>
+</h3>
 <p>在结构方程模型的度量模型建模的过程中，可以通过 N 个被试建立 N 个方程，其中每个方程都包含 K 个未知数。此时定义自由度为 df=N-K，即自由度为根据现有数据的总量能够列出的方程总数减去构建模型需要求解的未知数的总数的差。</p>
 <p>模型越复杂，未知数总数 K 增大，自由度越小。被试数量越多，能够列出的方程总数 N 越大，自由度越大。</p>
-<h4 id="欠拟合与过拟合" class="scroll-mt-8 group">
+<h3 id="欠拟合与过拟合" class="scroll-mt-8 group">
   欠拟合与过拟合
   
     <a href="#%e6%ac%a0%e6%8b%9f%e5%90%88%e4%b8%8e%e8%bf%87%e6%8b%9f%e5%90%88"
@@ -333,12 +333,12 @@
 
     </a>
   
-</h4>
+</h3>
 <p>欠拟合：N-K＜0 的情况，无法求出任何一个未知数。</p>
 <p>恰好拟合：N-K=0 的情况，可以求出所有未知数，但是未知数只有唯一解。结果不具备可推广性。</p>
 <p>过拟合：N-K＞0 的情况，可以求出所有未知数且具有多重解，根据最小二乘法来确定最优解，此时具有一定程度的可推广性。</p>
 <p>严重的过拟合也是不可取的，这种情况下函数会经过所有的真实测量值，模型也会变得极度复杂且不再具备预测性。最好的办法依旧是通过最小二乘法来确定最佳模型。</p>
-<h4 id="参数估计和模型拟合" class="scroll-mt-8 group">
+<h3 id="参数估计和模型拟合" class="scroll-mt-8 group">
   参数估计和模型拟合
   
     <a href="#%e5%8f%82%e6%95%b0%e4%bc%b0%e8%ae%a1%e5%92%8c%e6%a8%a1%e5%9e%8b%e6%8b%9f%e5%90%88"
@@ -362,9 +362,9 @@
 
     </a>
   
-</h4>
+</h3>
 <p>通过样本数据和度量模型来构建两个方差-协方差矩阵，利用真实数据的矩阵来估计理论的矩阵。比较两个矩阵的差异，用拟合函数（最大似然，最小二乘）来找到最佳参数。</p>
-<h4 id="确定模型拟合好坏的指标" class="scroll-mt-8 group">
+<h3 id="确定模型拟合好坏的指标" class="scroll-mt-8 group">
   确定模型拟合好坏的指标：
   
     <a href="#%e7%a1%ae%e5%ae%9a%e6%a8%a1%e5%9e%8b%e6%8b%9f%e5%90%88%e5%a5%bd%e5%9d%8f%e7%9a%84%e6%8c%87%e6%a0%87"
@@ -388,11 +388,11 @@
 
     </a>
   
-</h4>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102156846.png" alt="">
-<img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102156231.png" alt="">
-<img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102157272.png" alt=""></p>
-<h4 id="共同方法偏差" class="scroll-mt-8 group">
+</h3>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690242376.png" alt="">
+<img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690250412.png" alt="">
+<img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690259414.png" alt=""></p>
+<h3 id="共同方法偏差" class="scroll-mt-8 group">
   共同方法偏差
   
     <a href="#%e5%85%b1%e5%90%8c%e6%96%b9%e6%b3%95%e5%81%8f%e5%b7%ae"
@@ -416,7 +416,7 @@
 
     </a>
   
-</h4>
+</h3>
 <p>定义：在建模时（尤其是复杂模型），各变量采用了相同的测量方法（例如问卷），从而可能导致计算出来的变量之间的相关并非是变量之间真实的相关，而是由相同的测量方法导致的虚假相关。</p>
 <p>检验方法： Harman 单因素法</p>
 <p>结合 EFA 检验：将所有变量的数据匹配混合在一起并 EFA，要求找不到单一因子，或者找到了多个因子但是第一个因子的解释率小于 40% 。</p>

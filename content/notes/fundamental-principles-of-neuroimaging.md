@@ -12,11 +12,11 @@ math: true
 <!--more-->
 
 
-### 脑成像的生理基础
+## 脑成像的生理基础
 
 神经活动血管耦合（耦合可以理解为相关），它实际上是通过神经活动和血液中的氧气或葡萄糖的活动的相关来间接成像的。其中利用葡萄糖成像的有 PET，利用氧气（含氧血红蛋白）成像得有 fMRI 和 fNIRS 
 
-### BOLD 信号
+## BOLD 信号
 
 BOLD 指 Blood-Oxygen Level Dependent 
 
@@ -25,9 +25,9 @@ BOLD 指 Blood-Oxygen Level Dependent
 1. 神经活动会引发对应区域的含氧血红蛋白和脱氧血红蛋白的绝对值的上升，但含氧血红蛋白上升得更多，因此脱氧血红蛋白的相对上升值反而是负数。
 2. 含氧血红蛋白存在过补偿机制，也就是人体会往神经活动的地方运送比它实际需要的多得多的含氧血红蛋白。
 
-### 血流动力学响应方程
+## 血流动力学响应方程
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102212088.png)
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690440386.png)
 
 血流动力学响应方程的英文全称为 Hemodynamic Response Function, HRF
 
@@ -75,105 +75,15 @@ $$y=\beta_{0}+\beta_{1}X+\epsilon$$
 
 有多少个 \\(y\\)  就能够构建多少个方程，如下所示
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102339812.png)
-
-```KaTex
-\begin{aligned}
-y_1 &= \beta_0 + \beta_1X_1 + \varepsilon_1 \\
-y_2 &= \beta_0 + \beta_1X_2 + \varepsilon_2 \\
-y_3 &= \beta_0 + \beta_1X_3 + \varepsilon_3 \\
-y_4 &= \beta_0 + \beta_1X_4 + \varepsilon_4 \\
-y_5 &= \beta_0 + \beta_1X_5 + \varepsilon_5 \\
-y_6 &= \beta_0 + \beta_1X_6 + \varepsilon_6 \\
-y_7 &= \beta_0 + \beta_1X_7 + \varepsilon_7 \\
-\end{aligned}
-```
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690473193.png)
 
 可以将上述方程转化为如下的向量形式
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102341134.png)
-
-```KaTex
-\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7
-\end{bmatrix}
-= \beta_0
-\begin{bmatrix}
-1 \\
-1 \\
-1 \\
-1 \\
-1 \\
-1 \\
-1
-\end{bmatrix}
-+ \beta_1
-\begin{bmatrix}
-X_1 \\
-X_2 \\
-X_3 \\
-X_4 \\
-X_5 \\
-X_6 \\
-X_7
-\end{bmatrix}
-+
-\begin{bmatrix}
-\varepsilon_1 \\
-\varepsilon_2 \\
-\varepsilon_3 \\
-\varepsilon_4 \\
-\varepsilon_5 \\
-\varepsilon_6 \\
-\varepsilon_7
-\end{bmatrix}
-```
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690486971.png)
 
 然后可以进一步转化为如下的形式
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102346486.png)
-
-```KaTex
-\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & X_1 \\
-1 & X_2 \\
-1 & X_3 \\
-1 & X_4 \\
-1 & X_5 \\
-1 & X_6 \\
-1 & X_7
-\end{bmatrix}
-\begin{bmatrix}
-\beta_0 \\
-\beta_1
-\end{bmatrix}
-+
-\begin{bmatrix}
-\varepsilon_1 \\
-\varepsilon_2 \\
-\varepsilon_3 \\
-\varepsilon_4 \\
-\varepsilon_5 \\
-\varepsilon_6 \\
-\varepsilon_7
-\end{bmatrix}
-```
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690503253.png)
 
 最后可以将其用如下所示的形式表示
 
@@ -183,7 +93,7 @@ $$Y=X\beta+\epsilon$$
 
 在实际的数据分析过程中，只需要向 MATLAB 中的 EEGLAB 插件提供 \\(Y\\)  矩阵和 \\(X\\)  矩阵的数据即可求解。
 
-### 设计矩阵的编码
+## 设计矩阵的编码
 
 如果实验关注的变量的实验水平超过 2 个水平，那么就需要引入哑变量来对自变量进行编码。哑变量的英文全称为 Dummy Variable, 下面以单因素三水平实验设计为例。
 
@@ -199,15 +109,7 @@ $$y=\beta_{1}X_{1}+\beta_{2}X_{2}+\beta_{3}X_{3}+\epsilon$$
 
 所以，这三个变量的取值只可能是下面的三种情况之一
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102347690.png)
-
-```KaTex
-\begin{bmatrix}
-1, & 0, & 0 \\
-0, & 1, & 0 \\
-0, & 0, & 1
-\end{bmatrix}
-```
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690565515.png)
 
 基线代表的情况则为
 
@@ -217,71 +119,14 @@ $$[0, 0, 0]$$
 
 上述的变换也可以用矩阵形式来表达
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102348441.png)
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690603234.png)
 
-```KaTex
-\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7 \\
-y_8 \\
-y_9
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & 0 & 0 \\
-1 & 0 & 0 \\
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 1 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 1 \\
-0 & 0 & 1 \\
-0 & 0 & 1
-\end{bmatrix}
-\begin{bmatrix}
-\beta_1 \\
-\beta_2 \\
-\beta_3
-\end{bmatrix}
-+
-\begin{bmatrix}
-\epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \\
-\epsilon_4 \\
-\epsilon_5 \\
-\epsilon_6 \\
-\epsilon_7 \\
-\epsilon_8 \\
-\epsilon_9
-\end{bmatrix}
-```
 
 其中 \\(y_{1}\\)  到 \\(y_{3}\\)  都表示接受水平 1 的处理，\\(y_{4}\\)  到 \\(y_{9}\\)  同理。
 
 其中，下图中的矩阵可以用对比向量 \\(C^{T}\\)  来表示
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102350030.png)
-
-```KaTex
-\begin{bmatrix}
-1 & 0 & 0 \\
-1 & 0 & 0 \\
-1 & 0 & 0 \\
-0 & 1 & 0 \\
-0 & 1 & 0 \\
-0 & 1 & 0 \\
-0 & 0 & 1 \\
-0 & 0 & 1 \\
-0 & 0 & 1
-\end{bmatrix}
-```
-
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690633894.png)
 
 例如，当 \\(C^{T}=[-1, 0, 1]\\)  时，就代表 \\(y=\beta_{3}-\beta_{1}\\)  ，计算水平 3 和水平 1 的实验效应之差。
 
@@ -301,51 +146,6 @@ $$y=\beta_{1}X_{1}+\beta_{2}X_{2}+\beta_{3}X_{3}+\beta_{4}X_{4}+\epsilon$$
 
 此外，这种结合矩阵和向量的一般线性回归模型也能够分层回归和加入连续变量，例如下方的矩阵
 
-![](https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102351900.png)
-
-```KaTex
-\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7 \\
-y_8 \\
-y_9
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 & 1 & 0 & 0 & x_1 \\
-1 & 1 & 0 & 0 & x_2 \\
-1 & 1 & 0 & 0 & x_3 \\
-1 & 0 & 1 & 0 & x_4 \\
-1 & 0 & 1 & 0 & x_5 \\
-1 & 0 & 1 & 0 & x_6 \\
-1 & 0 & 0 & 1 & x_7 \\
-1 & 0 & 0 & 1 & x_8 \\
-1 & 0 & 0 & 1 & x_9
-\end{bmatrix}
-\begin{bmatrix}
-\beta_0 \\
-\beta_1 \\
-\beta_2 \\
-\beta_3 \\
-\beta_4
-\end{bmatrix}
-+
-\begin{bmatrix}
-\epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \\
-\epsilon_4 \\
-\epsilon_5 \\
-\epsilon_6 \\
-\epsilon_7 \\
-\epsilon_8 \\
-\epsilon_9
-\end{bmatrix}
-```
+![](https://s3.bitiful.net/myblogresourcebucket/docs/1741690654547.png)
 
 其中，\\(\beta_{0}\\)  与设计矩阵 \\(X\\)  的第一列相乘表示截距。第二列到第四列表示哑变量。第五列是协变量，可以是连续数据，例如智商。分层回归则是指可以先建立设计矩阵 \\(X\\)  只包含第五列协变量的模型，然后再加入后续的哑变量，进行模型比较，计算 \\(F\\)  值和斜率显著性。

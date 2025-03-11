@@ -27,7 +27,7 @@
   <meta itemprop="description" content="本文介绍了以 BOLD 信号为基础的脑成像技术的基本原理、实验设计方法及其数据分析流程。">
   <meta itemprop="datePublished" content="2025-03-10T22:10:00+08:00">
   <meta itemprop="dateModified" content="2025-03-10T22:10:00+08:00">
-  <meta itemprop="wordCount" content="839">
+  <meta itemprop="wordCount" content="269">
   <meta itemprop="keywords" content="Neuroimaging">
 
   <meta name="twitter:card" content="summary">
@@ -109,9 +109,9 @@
   ],
   "mainEntityOfPage": "https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/",
   "name": "脑成像的基本原理",
-  "timeRequired": "PT4M",
+  "timeRequired": "PT2M",
   "url": "https://burningsky0306.github.io/notes/fundamental-principles-of-neuroimaging/",
-  "wordCount": 839
+  "wordCount": 269
 }
 </script>
 
@@ -155,7 +155,7 @@
     </header>
 
     <p>本文介绍了以 BOLD 信号为基础的脑成像技术的基本原理、实验设计方法及其数据分析流程。</p>
-<h4 id="脑成像的生理基础" class="scroll-mt-8 group">
+<h3 id="脑成像的生理基础" class="scroll-mt-8 group">
   脑成像的生理基础
   
     <a href="#%e8%84%91%e6%88%90%e5%83%8f%e7%9a%84%e7%94%9f%e7%90%86%e5%9f%ba%e7%a1%80"
@@ -179,9 +179,9 @@
 
     </a>
   
-</h4>
+</h3>
 <p>神经活动血管耦合（耦合可以理解为相关），它实际上是通过神经活动和血液中的氧气或葡萄糖的活动的相关来间接成像的。其中利用葡萄糖成像的有 PET，利用氧气（含氧血红蛋白）成像得有 fMRI 和 fNIRS</p>
-<h4 id="bold-信号" class="scroll-mt-8 group">
+<h3 id="bold-信号" class="scroll-mt-8 group">
   BOLD 信号
   
     <a href="#bold-%e4%bf%a1%e5%8f%b7"
@@ -205,14 +205,14 @@
 
     </a>
   
-</h4>
+</h3>
 <p>BOLD 指 Blood-Oxygen Level Dependent</p>
 <p>实际上记录 BOLD 信号时既可以记录含氧血红蛋白，也可以记录脱氧血红蛋白，但是优先记录含氧血红蛋白。原因如下：</p>
 <ol>
 <li>神经活动会引发对应区域的含氧血红蛋白和脱氧血红蛋白的绝对值的上升，但含氧血红蛋白上升得更多，因此脱氧血红蛋白的相对上升值反而是负数。</li>
 <li>含氧血红蛋白存在过补偿机制，也就是人体会往神经活动的地方运送比它实际需要的多得多的含氧血红蛋白。</li>
 </ol>
-<h4 id="血流动力学响应方程" class="scroll-mt-8 group">
+<h3 id="血流动力学响应方程" class="scroll-mt-8 group">
   血流动力学响应方程
   
     <a href="#%e8%a1%80%e6%b5%81%e5%8a%a8%e5%8a%9b%e5%ad%a6%e5%93%8d%e5%ba%94%e6%96%b9%e7%a8%8b"
@@ -236,8 +236,8 @@
 
     </a>
   
-</h4>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102212088.png" alt=""></p>
+</h3>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690440386.png" alt=""></p>
 <p>血流动力学响应方程的英文全称为 Hemodynamic Response Function, HRF</p>
 <ul>
 <li>HRF 的峰值反映了神经活动的强度</li>
@@ -364,289 +364,16 @@
 \(\epsilon\)  则是模型估计的误差</p>
 <p>在这个公式中，\(y\)  是实际测量值，\(X\)  是某个 \(y\)  所对应的实验处理水平，其根据具体的实验处理水平数为其赋值，例如一个单因素两水平实验设计，\(X\)  就可以采用虚无编码，取 0 或 1，但是更多水平的赋值则会更加复杂，具体参见后文。</p>
 <p>有多少个 \(y\)  就能够构建多少个方程，如下所示</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102339812.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-01">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-01 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-01"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{aligned}
-y_1 &amp;= \beta_0 + \beta_1X_1 + \varepsilon_1 \\
-y_2 &amp;= \beta_0 + \beta_1X_2 + \varepsilon_2 \\
-y_3 &amp;= \beta_0 + \beta_1X_3 + \varepsilon_3 \\
-y_4 &amp;= \beta_0 + \beta_1X_4 + \varepsilon_4 \\
-y_5 &amp;= \beta_0 + \beta_1X_5 + \varepsilon_5 \\
-y_6 &amp;= \beta_0 + \beta_1X_6 + \varepsilon_6 \\
-y_7 &amp;= \beta_0 + \beta_1X_7 + \varepsilon_7 \\
-\end{aligned}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690473193.png" alt=""></p>
 <p>可以将上述方程转化为如下的向量形式</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102341134.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-02">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-02 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-02"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7
-\end{bmatrix}
-= \beta_0
-\begin{bmatrix}
-1 \\
-1 \\
-1 \\
-1 \\
-1 \\
-1 \\
-1
-\end{bmatrix}
-+ \beta_1
-\begin{bmatrix}
-X_1 \\
-X_2 \\
-X_3 \\
-X_4 \\
-X_5 \\
-X_6 \\
-X_7
-\end{bmatrix}
-+
-\begin{bmatrix}
-\varepsilon_1 \\
-\varepsilon_2 \\
-\varepsilon_3 \\
-\varepsilon_4 \\
-\varepsilon_5 \\
-\varepsilon_6 \\
-\varepsilon_7
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690486971.png" alt=""></p>
 <p>然后可以进一步转化为如下的形式</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102346486.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-03">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-03 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-03"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 &amp; X_1 \\
-1 &amp; X_2 \\
-1 &amp; X_3 \\
-1 &amp; X_4 \\
-1 &amp; X_5 \\
-1 &amp; X_6 \\
-1 &amp; X_7
-\end{bmatrix}
-\begin{bmatrix}
-\beta_0 \\
-\beta_1
-\end{bmatrix}
-+
-\begin{bmatrix}
-\varepsilon_1 \\
-\varepsilon_2 \\
-\varepsilon_3 \\
-\varepsilon_4 \\
-\varepsilon_5 \\
-\varepsilon_6 \\
-\varepsilon_7
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690503253.png" alt=""></p>
 <p>最后可以将其用如下所示的形式表示</p>
 <p>$$Y=X\beta+\epsilon$$</p>
 <p>其中 \(Y\)  代表原始数据构成的矩阵，称之为原始数据矩阵，有多少张 BOLD 信号的快照 \(Y\)  就能取到到多少个值。\(X\)  代表实验设计中不同的实验水平所组成的矩阵，称之为设计矩阵，有多少个实验水平\(X\)  就能取到多少个值。\(\beta\)  代表模型的截距和斜率构成的矩阵，称之为 \(\beta\)  矩阵，需要利用根据 \(Y\)  和 \(X\)  建立的方程求解。\(\epsilon\)  也就是模型估计的误差，被称为残差矩阵。</p>
 <p>在实际的数据分析过程中，只需要向 MATLAB 中的 EEGLAB 插件提供 \(Y\)  矩阵和 \(X\)  矩阵的数据即可求解。</p>
-<h4 id="设计矩阵的编码" class="scroll-mt-8 group">
+<h3 id="设计矩阵的编码" class="scroll-mt-8 group">
   设计矩阵的编码
   
     <a href="#%e8%ae%be%e8%ae%a1%e7%9f%a9%e9%98%b5%e7%9a%84%e7%bc%96%e7%a0%81"
@@ -670,7 +397,7 @@ y_7
 
     </a>
   
-</h4>
+</h3>
 <p>如果实验关注的变量的实验水平超过 2 个水平，那么就需要引入哑变量来对自变量进行编码。哑变量的英文全称为 Dummy Variable, 下面以单因素三水平实验设计为例。</p>
 <p>原始的一元线性回归模型的形式为</p>
 <p>$$Y=X\beta+\epsilon$$</p>
@@ -678,263 +405,15 @@ y_7
 <p>$$y=\beta_{1}X_{1}+\beta_{2}X_{2}+\beta_{3}X_{3}+\epsilon$$</p>
 <p>其中 \(X_{1}\) , \(X_{2}\) , \(X_{3}\)  分别代表自变量 \(X\)  的三个水平，它们各自能够取值 0 或 1。对于 \(X_{1}=0\) ，表示不接受水平 1 的处理，\(X_{1}=1\)  则表示接受水平 1 的处理，二者可以相反。\(X_{2}\)  和 \(X_{3}\)  同理。</p>
 <p>所以，这三个变量的取值只可能是下面的三种情况之一</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102347690.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-04">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-04 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-04"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-1, &amp; 0, &amp; 0 \\
-0, &amp; 1, &amp; 0 \\
-0, &amp; 0, &amp; 1
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690565515.png" alt=""></p>
 <p>基线代表的情况则为</p>
 <p>$$[0, 0, 0]$$</p>
 <p>\(\beta_{1}\) ，\(\beta_{2}\) ，\(\beta_{3}\)  分别表示从基线水平变化到接受水平 1 的处理，接受水平 2 的处理或接受水平 3 的处理所带来的效应。它们之间的差值则表示实验水平之间的变化所带来的效应改变。</p>
 <p>上述的变换也可以用矩阵形式来表达</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102348441.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-05">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-05 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-05"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7 \\
-y_8 \\
-y_9
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1
-\end{bmatrix}
-\begin{bmatrix}
-\beta_1 \\
-\beta_2 \\
-\beta_3
-\end{bmatrix}
-+
-\begin{bmatrix}
-\epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \\
-\epsilon_4 \\
-\epsilon_5 \\
-\epsilon_6 \\
-\epsilon_7 \\
-\epsilon_8 \\
-\epsilon_9
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690603234.png" alt=""></p>
 <p>其中 \(y_{1}\)  到 \(y_{3}\)  都表示接受水平 1 的处理，\(y_{4}\)  到 \(y_{9}\)  同理。</p>
 <p>其中，下图中的矩阵可以用对比向量 \(C^{T}\)  来表示</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102350030.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-06">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-06 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-06"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690633894.png" alt=""></p>
 <p>例如，当 \(C^{T}=[-1, 0, 1]\)  时，就代表 \(y=\beta_{3}-\beta_{1}\)  ，计算水平 3 和水平 1 的实验效应之差。</p>
 <p>综上所述，每一个哑变量就代表了自变量的一个水平，其取值只为 0 或 1，表示是否接受该水平的处理。无论自变量有多少个，只要所有的自变量所构成的水平数为 N， 那么就有 N 个哑变量。</p>
 <p>如果实验设计为两因素四水平 2×2 实验设计，那么其一般线性回归模型的表达就如下方所示（数据标准化处理，没有协变量）</p>
@@ -944,113 +423,7 @@ y_9
 <p>若要求出 A 和 B 的交互效应，那么就需要先分别计算 A1 和 A2 的简单主效应，比较两个简单主效应的差值与零相比，其差异是否显著。</p>
 <p>具体的计算步骤为令 \(C_{1}^{T}=[1, -1, 0, 0]\) ，\(C_{2}^{T}=[0, 0, 1, -1]\) ，求出\(\Delta{y}=y_{1}-y_{2}=C_{1}^{T}\beta-C_{2}^{T}\beta+\epsilon\)  的数值，其就反映了 A 和 B 是否存在交互效应。</p>
 <p>此外，这种结合矩阵和向量的一般线性回归模型也能够分层回归和加入连续变量，例如下方的矩阵</p>
-<p><img src="https://raw.githubusercontent.com/BurningSky0306/Img/main/Img/202503102351900.png" alt=""></p>
-<figure class="codeblock not-prose relative scroll-mt-8" id="codeblock-07">
-  <aside
-    class="absolute right-0 top-0 hidden rounded-bl-sm rounded-tr-sm bg-white/10 px-2 py-1 text-white/70 transition-opacity md:inline-block"
-  >
-    <div class="codeblock-meta flex max-w-xs flex-row items-center space-x-3">
-      <div class="small-caps shrink cursor-default truncate font-mono text-xs" aria-hidden="true">
-        <span class="relative">KaTex</span>
-      </div>
-      <div>
-        <clipboard-copy
-          type="button"
-          aria-label="Copy code to clipboard"
-          title="Copy code to clipboard"
-          class="block cursor-pointer transition-colors hover:text-sky-400"
-          target="#codeblock-07 code"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="lucide lucide-clipboard h-4 w-4"
-  viewBox="0 0 24 24"
->
-  <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
-  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
-</svg>
-
-        </clipboard-copy>
-      </div>
-      <div>
-        <a
-          href="#codeblock-07"
-          class="block"
-          aria-label="Link to this code block"
-          title="Link to this code block"
-        >
-          <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="16"
-  height="16"
-  fill="none"
-  stroke="currentColor"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  stroke-width="2"
-  class="lucide lucide-link w-4 h-4 block"
-  viewBox="0 0 24 24"
->
-  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
-  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
-</svg>
-
-        </a>
-      </div>
-    </div>
-  </aside>
-  <p class="sr-only">KaTex code snippet start</p>
-  <pre tabindex="0"><code class="language-KaTex" data-lang="KaTex">\begin{bmatrix}
-y_1 \\
-y_2 \\
-y_3 \\
-y_4 \\
-y_5 \\
-y_6 \\
-y_7 \\
-y_8 \\
-y_9
-\end{bmatrix}
-=
-\begin{bmatrix}
-1 &amp; 1 &amp; 0 &amp; 0 &amp; x_1 \\
-1 &amp; 1 &amp; 0 &amp; 0 &amp; x_2 \\
-1 &amp; 1 &amp; 0 &amp; 0 &amp; x_3 \\
-1 &amp; 0 &amp; 1 &amp; 0 &amp; x_4 \\
-1 &amp; 0 &amp; 1 &amp; 0 &amp; x_5 \\
-1 &amp; 0 &amp; 1 &amp; 0 &amp; x_6 \\
-1 &amp; 0 &amp; 0 &amp; 1 &amp; x_7 \\
-1 &amp; 0 &amp; 0 &amp; 1 &amp; x_8 \\
-1 &amp; 0 &amp; 0 &amp; 1 &amp; x_9
-\end{bmatrix}
-\begin{bmatrix}
-\beta_0 \\
-\beta_1 \\
-\beta_2 \\
-\beta_3 \\
-\beta_4
-\end{bmatrix}
-+
-\begin{bmatrix}
-\epsilon_1 \\
-\epsilon_2 \\
-\epsilon_3 \\
-\epsilon_4 \\
-\epsilon_5 \\
-\epsilon_6 \\
-\epsilon_7 \\
-\epsilon_8 \\
-\epsilon_9
-\end{bmatrix}</code></pre>
-  <p class="sr-only">KaTex code snippet end</p>
-
-  
-</figure>
+<p><img src="https://s3.bitiful.net/myblogresourcebucket/docs/1741690654547.png" alt=""></p>
 <p>其中，\(\beta_{0}\)  与设计矩阵 \(X\)  的第一列相乘表示截距。第二列到第四列表示哑变量。第五列是协变量，可以是连续数据，例如智商。分层回归则是指可以先建立设计矩阵 \(X\)  只包含第五列协变量的模型，然后再加入后续的哑变量，进行模型比较，计算 \(F\)  值和斜率显著性。</p>
   </article>
     <aside class="not-prose flex flex-col space-y-8 border-t pt-6">
