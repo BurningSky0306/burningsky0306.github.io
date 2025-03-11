@@ -3,7 +3,7 @@ date: '2025-03-10T22:10:00+08:00'
 draft: false
 title: '脑成像的基本原理'
 categories: ["psychology", "cognitive neuroscience"]
-tags: ["neuroimaging"]
+tags: ["neuroimaging", "fmri"]
 math: true
 ---
 

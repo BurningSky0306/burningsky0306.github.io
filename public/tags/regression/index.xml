@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://burningsky0306.github.io/tags/regression/</link>
+    <description>Recent content in Regression on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
+    <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
+    <copyright>Jethro Vanbrook</copyright>
+    <lastBuildDate>Mon, 10 Mar 2025 21:54:33 +0800</lastBuildDate>
+    <atom:link href="https://burningsky0306.github.io/tags/regression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>结构方程模型简介</title>
+      <link>https://burningsky0306.github.io/notes/introduction-to-structural-equation-modeling/</link>
+      <pubDate>Mon, 10 Mar 2025 21:54:33 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/notes/introduction-to-structural-equation-modeling/</guid>
+      <description>&lt;p&gt;本文介绍了结构方程模型的基本概念、组成要素和建立步骤，度量模型与结构模型的区别、自由度定义、模型拟合评估指标以及共同方法偏差的检验方法。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

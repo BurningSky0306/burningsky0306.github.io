@@ -9,13 +9,48 @@
     <managingEditor>BurningSky0306@gmail.com (Fan Jianbo)</managingEditor>
     <webMaster>BurningSky0306@gmail.com (Fan Jianbo)</webMaster>
     <copyright>Jethro Vanbrook</copyright>
-    <lastBuildDate>Mon, 10 Mar 2025 22:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Mar 2025 01:38:06 +0800</lastBuildDate>
     <atom:link href="https://burningsky0306.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Processing</title>
+      <link>https://burningsky0306.github.io/tags/data-processing/</link>
+      <pubDate>Wed, 12 Mar 2025 01:38:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/data-processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fmri</title>
+      <link>https://burningsky0306.github.io/tags/fmri/</link>
+      <pubDate>Wed, 12 Mar 2025 01:38:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/fmri/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Neuroimaging</title>
       <link>https://burningsky0306.github.io/tags/neuroimaging/</link>
-      <pubDate>Mon, 10 Mar 2025 22:10:00 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <pubDate>Wed, 12 Mar 2025 01:38:06 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
       <guid>https://burningsky0306.github.io/tags/neuroimaging/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Experiment Design</title>
+      <link>https://burningsky0306.github.io/tags/experiment-design/</link>
+      <pubDate>Wed, 12 Mar 2025 01:31:38 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/experiment-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matlab</title>
+      <link>https://burningsky0306.github.io/tags/matlab/</link>
+      <pubDate>Wed, 12 Mar 2025 01:20:15 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/matlab/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spm</title>
+      <link>https://burningsky0306.github.io/tags/spm/</link>
+      <pubDate>Wed, 12 Mar 2025 01:20:15 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/spm/</guid>
       <description></description>
     </item>
     <item>
@@ -33,10 +68,17 @@
       <description></description>
     </item>
     <item>
-      <title>Regression Analysis</title>
-      <link>https://burningsky0306.github.io/tags/regression-analysis/</link>
+      <title>Analysis</title>
+      <link>https://burningsky0306.github.io/tags/analysis/</link>
       <pubDate>Mon, 10 Mar 2025 21:54:33 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
-      <guid>https://burningsky0306.github.io/tags/regression-analysis/</guid>
+      <guid>https://burningsky0306.github.io/tags/analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regression</title>
+      <link>https://burningsky0306.github.io/tags/regression/</link>
+      <pubDate>Mon, 10 Mar 2025 21:54:33 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/regression/</guid>
       <description></description>
     </item>
     <item>
@@ -58,6 +100,13 @@
       <link>https://burningsky0306.github.io/tags/moderation/</link>
       <pubDate>Mon, 10 Mar 2025 21:45:35 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
       <guid>https://burningsky0306.github.io/tags/moderation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Regression Analysis</title>
+      <link>https://burningsky0306.github.io/tags/regression-analysis/</link>
+      <pubDate>Mon, 10 Mar 2025 21:45:35 +0800</pubDate><author>BurningSky0306@gmail.com (Fan Jianbo)</author>
+      <guid>https://burningsky0306.github.io/tags/regression-analysis/</guid>
       <description></description>
     </item>
   </channel>

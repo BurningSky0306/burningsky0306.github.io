@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "notes/fundamental-principles-of-neuroimaging.md",
+                "file": "notes/mediation-effect-and-its-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fundamental-principles-of-neuroimaging"
+              "title": "mediation-effect-and-its-test"
             }
           }
         ]
@@ -170,6 +170,11 @@
   },
   "active": "35d127a02f967f4b",
   "lastOpenFiles": [
+    "notes/introduction-to-structural-equation-modeling.md",
+    "notes/introduction-to-eeg-and-event-related-potentials.md",
+    "notes/fundamental-principles-of-neuroimaging.md",
+    "notes/mediation-effect-and-its-test.md",
+    "notes/moderated-mediation-and-its-test.md",
     "_index.md",
     "notes/How-to-Build-and-Compare-Statistical-Models-Through-Regression-Analysis-and-Significance-Testing.md"
   ]

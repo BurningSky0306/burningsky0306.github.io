@@ -1,10 +1,15 @@
 ---
-date: '2025-03-10T21:54:33+08:00'
+date: 2025-03-10T21:54:33+08:00
 draft: false
-title: '结构方程模型简介'
-categories: ["psychology", "statistical analysis"]
-tags: ["regression analysis", "sem"]
-math: ture
+title: 结构方程模型简介
+categories:
+  - psychology
+  - statistical analysis
+tags:
+  - regression
+  - analysis
+  - sem
+math: true
 ---
 
 本文介绍了结构方程模型的基本概念、组成要素和建立步骤，度量模型与结构模型的区别、自由度定义、模型拟合评估指标以及共同方法偏差的检验方法。
