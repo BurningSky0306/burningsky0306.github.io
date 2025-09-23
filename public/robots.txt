@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://burningsky0306.github.io/sitemap.xml

@@ -1,0 +1,89 @@
+baseURL: "https://burningsky0306.github.io"
+languageCode: zh-cn
+title: Jethro Vanbrook's Blog
+theme: ["PaperMod"]
+languages:
+  zh:
+    taxonomies:
+      category: categories
+      tag: tags
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  author: Jethro Vanbrook
+  DateFormat: "2006年1月2日"
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  math: true
+  enableEmoji: true
+  enableInlineShortcodes: true
+  disableShare: true 
+
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    android_chrome_192x192: "android-chrome-192x192.png"
+    android_chrome_512x512: "android-chrome-512x512.png"
+    customCSS: ["css/custom.css"]
+
+  label:
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+
+  homeInfoParams:
+    Title: "👋 欢迎来到我的博客！"
+    Content: >
+      - 👉一名研究牲。
+      
+
+      - 👉偶尔勤于思考，时常困于行动。
+
+
+      - 👉在互联网上留下一些思考，证明我来过。
+
+
+  socialIcons:
+    - name: email
+      url: "mailto:burningsky0306@gmail.com"
+    - name: rss
+      url: "https://burningsky0306.github.io/index.xml"
+
+
+menu:
+  main:
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false

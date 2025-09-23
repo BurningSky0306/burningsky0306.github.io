@@ -1,12 +1,11 @@
 ---
+title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 draft: false
-title: '{{ replace .File.ContentBaseName "-" " " | title }}'
-categories: [""]
-tags: [""]
-math: true
+categories: [""] 
+tags: [""] 
+author: "Jethro Vanbrook"
 ---
-
 
 
 <!--more-->
