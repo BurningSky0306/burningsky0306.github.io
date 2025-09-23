@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://burningsky0306.github.io/categories/</loc>
-    <lastmod>2025-09-23T23:11:50+08:00</lastmod>
-  </url><url>
     <loc>https://burningsky0306.github.io/</loc>
-    <lastmod>2025-09-23T23:11:50+08:00</lastmod>
+    <lastmod>2025-09-24T00:10:52+08:00</lastmod>
   </url><url>
     <loc>https://burningsky0306.github.io/posts/</loc>
+    <lastmod>2025-09-24T00:10:52+08:00</lastmod>
+  </url><url>
+    <loc>https://burningsky0306.github.io/posts/test/</loc>
+    <lastmod>2025-09-24T00:10:52+08:00</lastmod>
+  </url><url>
+    <loc>https://burningsky0306.github.io/categories/</loc>
     <lastmod>2025-09-23T23:11:50+08:00</lastmod>
   </url><url>
     <loc>https://burningsky0306.github.io/tags/</loc>
