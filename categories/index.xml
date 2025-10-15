@@ -4,29 +4,29 @@
     <title>Categories on Jethro Vanbrook&#39;s Blog</title>
     <link>https://jethrovanbrook.com/categories/</link>
     <description>Recent content in Categories on Jethro Vanbrook&#39;s Blog</description>
-    <generator>Hugo -- 0.150.0</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
     <atom:link href="https://jethrovanbrook.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>随笔</title>
+      <link>https://jethrovanbrook.com/categories/%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>心理学</title>
+      <link>https://jethrovanbrook.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</guid>
+      <description></description>
+    </item>
     <item>
       <title>AI</title>
       <link>https://jethrovanbrook.com/categories/ai/</link>
       <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
       <guid>https://jethrovanbrook.com/categories/ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>随笔</title>
-      <link>https://jethrovanbrook.com/categories/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Wed, 24 Sep 2025 00:54:25 +0800</pubDate>
-      <guid>https://jethrovanbrook.com/categories/%E9%9A%8F%E7%AC%94/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>政治</title>
-      <link>https://jethrovanbrook.com/categories/%E6%94%BF%E6%B2%BB/</link>
-      <pubDate>Tue, 23 Sep 2025 23:11:50 +0800</pubDate>
-      <guid>https://jethrovanbrook.com/categories/%E6%94%BF%E6%B2%BB/</guid>
       <description></description>
     </item>
   </channel>
