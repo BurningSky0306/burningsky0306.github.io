@@ -1,0 +1,73 @@
+/* ============================================================
+   自定义样式（在 <head> 末尾经 customCSS 加载，覆盖主题默认）
+   1) 字体（全站单一来源）  2) 中文长文排版  3) 视觉身份（克制微调）
+   ============================================================ */
+
+/* ---------- 1) 字体：全站单一来源 ---------- */
+:root {
+  --font-sans: "LXGW WenKai", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body { font-family: var(--font-sans); }
+/* ponytail: body 覆盖已足够（其余靠继承），此列表仅作保险，防止某处元素级 font-family；code/pre 不列入以保留等宽 */
+p, h1, h2, h3, h4, h5, h6, span, a, li, blockquote {
+  font-family: var(--font-sans) !important;
+}
+
+/* ---------- 2) 中文长文排版 ---------- */
+.post-content {
+  line-height: 1.8;          /* 中文长段更透气；站点其余 UI 保持主题 1.6 */
+  letter-spacing: 0.02em;
+  text-autospace: normal;    /* 中英/数字间自动留白 —— 渐进增强，不支持的浏览器无副作用 */
+  text-spacing-trim: normal; /* CJK 标点挤压优化 —— 同为渐进增强 */
+}
+
+/* ---------- 3) 视觉身份（克制微调：仅变量层 + 引用块，不改结构/不加组件） ---------- */
+:root {
+  --theme: #faf8f5;     /* 暖纸底 */
+  --entry: #fffdfa;     /* 卡片/文章底，微高于页面 */
+  --primary: #1f1b18;   /* 暖墨：标题、导航、列表标题 */
+  --content: #2b2724;   /* 正文墨色 · 对比 ≈14:1 */
+  --secondary: #6b625a; /* 次级信息 · 对比 ≈5.6:1 */
+  --tertiary: #d8d0c4;  /* 分隔线等 */
+  --border: #ece7e0;
+  --code-bg: #f2ede6;   /* 内联 code / TOC / 标签 / 引用底 */
+  --accent: #a1553f;    /* 陶土强调色 · 作正文链接对比 ≈5.1:1 */
+}
+.dark {
+  --theme: #1c1a18;     /* 暖炭底（原为冷灰） */
+  --entry: #272522;
+  --primary: #e7e2da;
+  --content: #c9c3bb;   /* 对比 ≈9.9:1 */
+  --secondary: #9a9088;
+  --tertiary: #413c35;
+  --border: #34302b;
+  --code-bg: #2a2723;
+  --accent: #d98a6a;    /* 暗底下更亮的陶土 · 对比 ≈6.4:1 */
+}
+
+/* 强调色：正文链接（PaperMod 用 currentColor 画下划线，会一并变色）+ 少量交互态；不全站泛滥 */
+.post-content a { color: var(--accent); }
+.post-tags a:hover,
+.toc a:hover { color: var(--accent); }
+
+/* 引用块出性格：暖底微填充 + accent 左条 + 装饰性开引号 */
+.post-content blockquote {
+  position: relative;
+  margin: 24px 0;
+  padding: 12px 18px 12px 42px;
+  border-inline-start: 4px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--code-bg);
+  color: var(--secondary);
+}
+.post-content blockquote::before {
+  content: "\201C";           /* 装饰性开引号 “ */
+  position: absolute;
+  inset-inline-start: 10px;
+  top: 2px;
+  font-size: 2.2em;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.35;
+}
+.post-content blockquote p:last-child { margin-bottom: 0; }
