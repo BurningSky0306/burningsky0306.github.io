@@ -1,0 +1,47 @@
+/* giscus 评论区 · 亮色：在官方 light 主题上覆盖变量，色值与 assets/css/extended/custom.css 一致 */
+@import url("https://giscus.app/themes/light.css");
+
+main {
+  --color-canvas-default: #faf9f5;
+  --color-canvas-overlay: #faf9f5;
+  --color-canvas-inset: #f5f4ee;
+  --color-canvas-subtle: #f0eee6;
+  --color-fg-default: #141413;
+  --color-fg-muted: #6b6a65;
+  --color-fg-subtle: #6b6a65;
+  --color-border-default: #dedcd1;
+  --color-border-muted: #e8e6dc;
+  --color-neutral-muted: rgba(222, 220, 209, .5);
+  --color-accent-fg: #b5532f;
+  --color-accent-emphasis: #b5532f;
+  --color-accent-muted: rgba(217, 119, 87, .4);
+  --color-accent-subtle: rgba(217, 119, 87, .1);
+  --color-scale-blue-1: rgba(217, 119, 87, .18);
+  --color-action-list-item-default-hover-bg: #f0eee6;
+  --color-segmented-control-bg: #f0eee6;
+  --color-segmented-control-button-bg: #faf9f5;
+  --color-segmented-control-button-selected-border: #dedcd1;
+  --color-social-reaction-bg-hover: #f0eee6;
+  --color-btn-text: #141413;
+  --color-btn-bg: #f0eee6;
+  --color-btn-border: #dedcd1;
+  --color-btn-hover-bg: #e8e6dc;
+  --color-btn-hover-border: #d1cfc4;
+  --color-btn-active-bg: #e8e6dc;
+  --color-btn-selected-bg: #e8e6dc;
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: #b5532f;
+  --color-btn-primary-border: transparent;
+  --color-btn-primary-hover-bg: #a84f2d;
+  --color-btn-primary-hover-border: transparent;
+  --color-btn-primary-selected-bg: #a84f2d;
+  --color-btn-primary-disabled-text: rgba(255, 255, 255, .85);
+  --color-btn-primary-disabled-bg: #dba48f;
+  --color-btn-primary-disabled-border: transparent;
+  --color-btn-shadow: none;
+  --color-btn-inset-shadow: none;
+  --color-btn-primary-shadow: none;
+  --color-btn-primary-inset-shadow: none;
+  --color-btn-primary-selected-shadow: none;
+  --color-primer-shadow-inset: none;
+}
