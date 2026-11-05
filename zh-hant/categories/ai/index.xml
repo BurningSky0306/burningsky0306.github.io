@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/zh-hant/categories/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/zh-hant/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基於李繼剛的「七把武器」提示詞進行修改後的卡片提示詞</title>
+      <link>https://jethrovanbrook.com/zh-hant/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hant/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;李繼剛的七把武器提示詞是什麼&#34;&gt;李繼剛的「七把武器」提示詞是什麼？&lt;/h2&gt;
+&lt;p&gt;「七把武器」提示詞是由 Prompter 李繼剛於 2024 年 10 月到 11 月之間所創作的七個思維工具提示詞，其能夠有效提高大模型輸出品質。該提示詞最大的特點之一在於可以直接讓大模型按照預設規則輸出 SVG 卡片。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

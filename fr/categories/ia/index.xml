@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IA on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/fr/categories/ia/</link>
+    <description>Recent content in IA on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/fr/categories/ia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Des prompts de cartes adaptés des « Sept armes » de Li Jigang</title>
+      <link>https://jethrovanbrook.com/fr/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/fr/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;que-sont-les-prompts-des-sept-armes-de-li-jigang&#34;&gt;Que sont les prompts des « Sept armes » de Li Jigang ?&lt;/h2&gt;
+&lt;p&gt;Les « Sept armes » sont sept prompts d’outils de pensée écrits par l’ingénieur de prompts Li Jigang entre octobre et novembre 2024. Ils améliorent efficacement la qualité des réponses des grands modèles de langage. L’une de leurs particularités les plus marquantes est de faire produire directement au modèle une carte SVG, selon des règles prédéfinies.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

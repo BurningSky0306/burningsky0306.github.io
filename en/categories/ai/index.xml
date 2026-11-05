@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/en/categories/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/en/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Card Prompts Adapted from Li Jigang’s “Seven Weapons”</title>
+      <link>https://jethrovanbrook.com/en/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/en/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;what-are-li-jigangs-seven-weapons-prompts&#34;&gt;What are Li Jigang’s “Seven Weapons” prompts?&lt;/h2&gt;
+&lt;p&gt;The “Seven Weapons” are seven thinking-tool prompts written by the prompt engineer Li Jigang between October and November 2024. They are effective at improving the quality of a large language model’s output. One of their most distinctive features is that they have the model output an SVG card directly, according to preset rules.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,6 @@
+/* 英文、法文页用的西文字体（OFL）：Serif4 Web = Source Serif 4，正文与标题；Sans3 Web = Source Sans 3，界面小字。
+   由 scripts/latin_fonts.py 从 Google Fonts 的可变字体生成：字重 400–600、光学尺寸固定 18、子集到拉丁字母与常用标点。
+   子集化属于 OFL 所说的修改版；Source Sans 3 的许可声明了保留名 'Source'，修改版不能沿用，所以两款都改了内部字体名与这里的 family。 */
+@font-face { font-family: "Serif4 Web"; src: url("./serif4.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Serif4 Web"; src: url("./serif4-italic.woff2") format("woff2"); font-weight: 400 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Sans3 Web"; src: url("./sans3.woff2") format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }

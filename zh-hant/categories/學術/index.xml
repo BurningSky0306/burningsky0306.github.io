@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>學術 on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/zh-hant/categories/%E5%AD%B8%E8%A1%93/</link>
+    <description>Recent content in 學術 on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/zh-hant/categories/%E5%AD%B8%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>網路分析: 訊號與迴響</title>
+      <link>https://jethrovanbrook.com/zh-hant/posts/network-analysis-signal-and-reverberation/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hant/posts/network-analysis-signal-and-reverberation/</guid>
+      <description>&lt;p&gt;在我那個不學無術的本科時期，網路分析統計方法，算是我少數真正用心學過、並引以為傲的知識了。&lt;/p&gt;
+&lt;p&gt;最近了解到 10 月 9 號一篇發表於 &lt;em&gt;Nature Human Behaviour&lt;/em&gt; 的文章 &lt;em&gt;Statistical evidence in psychological networks&lt;/em&gt; 系統性地質疑了這一領域中統計證據的可靠性，且其中一個關鍵的事實是文章作者主要來自於該領域的發源地 —— 荷蘭阿姆斯特丹大學。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

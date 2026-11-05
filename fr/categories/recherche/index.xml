@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Recherche on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/fr/categories/recherche/</link>
+    <description>Recent content in Recherche on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/fr/categories/recherche/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyse de réseaux : le signal et l’écho</title>
+      <link>https://jethrovanbrook.com/fr/posts/network-analysis-signal-and-reverberation/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/fr/posts/network-analysis-signal-and-reverberation/</guid>
+      <description>&lt;p&gt;Pendant mes années de licence, où je n’ai pas appris grand-chose, l’analyse de réseaux a été l’un des rares savoirs que j’ai vraiment pris à cœur, et dont j’étais fier.&lt;/p&gt;
+&lt;p&gt;J’ai appris récemment qu’un article publié le 9 octobre dans &lt;em&gt;Nature Human Behaviour&lt;/em&gt;, &lt;em&gt;Statistical evidence in psychological networks&lt;/em&gt;, remet systématiquement en question la fiabilité des preuves statistiques dans ce domaine. Fait essentiel : ses auteurs viennent principalement du berceau même de la discipline, l’Université d’Amsterdam, aux Pays-Bas.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

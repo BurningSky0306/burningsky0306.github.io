@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>提示词 on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/zh-hans/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</link>
+    <description>Recent content in 提示词 on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/zh-hans/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>基于李继刚的「七把武器」提示词进行修改后的卡片提示词</title>
+      <link>https://jethrovanbrook.com/zh-hans/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hans/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;李继刚的七把武器提示词是什么&#34;&gt;李继刚的「七把武器」提示词是什么？&lt;/h2&gt;
+&lt;p&gt;「七把武器」提示词是由 Prompter 李继刚于 2024 年 10 月到 11 月之间所创作的七个思维工具提示词，其能够有效提高大模型输出质量。该提示词最大的特点之一在于可以直接让大模型按照预设规则输出 SVG 卡片。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

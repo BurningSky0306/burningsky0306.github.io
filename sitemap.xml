@@ -1,78 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://jethrovanbrook.com/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/categories/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E8%80%83%E7%A0%94/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/who-holds-the-match-who-becomes-the-firewood/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-01-24T21:36:12+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/the-price-of-becoming-myself/</loc>
-    <lastmod>2025-11-02T23:34:58+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E8%87%AA%E6%88%91/</loc>
-    <lastmod>2025-11-02T23:34:58+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/1984/</loc>
-    <lastmod>2025-10-18T14:41:02+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E9%9F%A9%E7%82%B3%E5%93%B2/</loc>
-    <lastmod>2025-10-18T14:41:02+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E7%B2%BE%E7%A5%9E%E6%94%BF%E6%B2%BB%E5%AD%A6/</loc>
-    <lastmod>2025-10-18T14:41:02+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/trapped-in-a-gentle-and-transparent-cage/</loc>
-    <lastmod>2025-10-18T14:41:02+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E4%B9%94%E6%B2%BB%E5%A5%A5%E5%A8%81%E5%B0%94/</loc>
-    <lastmod>2025-10-16T22:50:53+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/where-souls-are-vaporized/</loc>
-    <lastmod>2025-10-16T22:50:53+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E7%BD%91%E7%BB%9C%E5%88%86%E6%9E%90/</loc>
-    <lastmod>2025-10-15T18:44:39+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/network-analysis-signal-and-reverberation/</loc>
-    <lastmod>2025-10-15T18:44:39+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/categories/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
-    <lastmod>2025-10-15T18:44:39+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/categories/ai/</loc>
-    <lastmod>2025-09-24T17:12:35+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/modified-card-prompts/</loc>
-    <lastmod>2025-09-24T17:12:35+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E6%80%9D%E7%BB%B4/</loc>
-    <lastmod>2025-09-24T17:12:35+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/</loc>
-    <lastmod>2025-09-24T17:12:35+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/posts/first-impression-of-shenzhen/</loc>
-    <lastmod>2025-09-24T00:54:25+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/archives/</loc>
-  </url><url>
-    <loc>https://jethrovanbrook.com/search/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://jethrovanbrook.com/zh-hans/sitemap.xml</loc>
+    
+      <lastmod>2026-01-24T21:36:12+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://jethrovanbrook.com/zh-hant/sitemap.xml</loc>
+    
+      <lastmod>2026-01-24T21:36:12+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://jethrovanbrook.com/en/sitemap.xml</loc>
+    
+      <lastmod>2026-01-24T21:36:12+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://jethrovanbrook.com/fr/sitemap.xml</loc>
+    
+      <lastmod>2026-01-24T21:36:12+08:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
