@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ko/categories/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ko/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>리지강의 「일곱 가지 무기」 프롬프트를 기반으로 수정한 카드 생성 프롬프트</title>
+      <link>https://jethrovanbrook.com/ko/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ko/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;리지강의-일곱-가지-무기-프롬프트란-무엇인가&#34;&gt;리지강의 「일곱 가지 무기」 프롬프트란 무엇인가?&lt;/h2&gt;
+&lt;p&gt;「일곱 가지 무기」 프롬프트는 프롬프트 엔지니어 리지강이 2024년 10월부터 11월 사이에 창작한 일곱 개의 사고 도구 프롬프트로, 거대언어모델의 출력 품질을 효과적으로 높여 준다. 이 프롬프트의 가장 큰 특징 가운데 하나는 거대언어모델이 미리 설정된 규칙에 따라 곧바로 SVG 카드를 출력하도록 할 수 있다는 점이다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

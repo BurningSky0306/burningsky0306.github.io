@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ネットワーク分析 on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ja/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90/</link>
+    <description>Recent content in ネットワーク分析 on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ja/tags/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ネットワーク分析：シグナルと反響</title>
+      <link>https://jethrovanbrook.com/ja/posts/network-analysis-signal-and-reverberation/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ja/posts/network-analysis-signal-and-reverberation/</guid>
+      <description>&lt;p&gt;ろくに勉強もしなかった私の学部時代において、ネットワーク分析の統計手法は、数少ない本気で学び、また誇りにしていた知識の一つだった。&lt;/p&gt;
+&lt;p&gt;最近知ったのだが、10月9日に&lt;em&gt;Nature Human Behaviour&lt;/em&gt;に掲載された論文&lt;em&gt;Statistical evidence in psychological networks&lt;/em&gt;が、この分野における統計的根拠の信頼性に体系的な疑問を投げかけているという。しかも決定的なのは、著者たちの主な所属先がこの分野の発祥の地——オランダのアムステルダム大学だということである。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

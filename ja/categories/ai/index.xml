@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ja/categories/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ja/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>李継剛の「七つの武器」プロンプトを改良したカード生成プロンプト</title>
+      <link>https://jethrovanbrook.com/ja/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ja/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;李継剛の七つの武器プロンプトとは何か&#34;&gt;李継剛の「七つの武器」プロンプトとは何か？&lt;/h2&gt;
+&lt;p&gt;「七つの武器」プロンプトとは、プロンプトエンジニアの李継剛が2024年10月から11月にかけて制作した、思考ツールとしての七つのプロンプトであり、大規模言語モデルの出力の質を効果的に高めることができる。このプロンプトの最大の特徴の一つは、あらかじめ設定されたルールに従って大規模言語モデルに直接SVGカードを出力させられる点にある。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -11,7 +11,7 @@
 <title>404</title>
 <script>
   (() => {
-    const langs = ['zh-hans', 'zh-hant', 'en', 'fr'], p = location.pathname;
+    const langs = ['zh-hans', 'zh-hant', 'ja', 'ko', 'en', 'fr', 'es', 'de'], p = location.pathname;
     const first = p.split('/')[1];
     if (langs.includes(first)) return location.replace(`/${first}/404.html`);
     let lang;
@@ -20,7 +20,7 @@
       lang = 'en';
       for (const t of navigator.languages || [navigator.language || '']) {
         const l = t.toLowerCase();
-        const m = /^zh-(tw|hk|mo|hant)\b/.test(l) ? 'zh-hant' : /^zh\b/.test(l) ? 'zh-hans' : /^(en|fr)\b/.test(l) ? l.slice(0, 2) : '';
+        const m = /^zh-(tw|hk|mo|hant)\b/.test(l) ? 'zh-hant' : /^zh\b/.test(l) ? 'zh-hans' : /^(ja|ko|en|fr|es|de)\b/.test(l) ? l.slice(0, 2) : '';
         if (m) { lang = m; break; }
       }
     }

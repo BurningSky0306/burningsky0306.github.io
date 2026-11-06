@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prompts on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/de/tags/prompts/</link>
+    <description>Recent content in Prompts on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 24 Sep 2025 17:12:35 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/de/tags/prompts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Überarbeitete Karten-Prompts auf Grundlage von Li Jigangs Prompts der „Sieben Waffen“</title>
+      <link>https://jethrovanbrook.com/de/posts/modified-card-prompts/</link>
+      <pubDate>Wed, 24 Sep 2025 17:12:35 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/de/posts/modified-card-prompts/</guid>
+      <description>&lt;h2 id=&#34;was-sind-li-jigangs-prompts-der-sieben-waffen&#34;&gt;Was sind Li Jigangs Prompts der „Sieben Waffen“?&lt;/h2&gt;
+&lt;p&gt;Bei den Prompts der „Sieben Waffen“ handelt es sich um sieben Prompts als Denkwerkzeuge, die der Prompt-Entwickler Li Jigang zwischen Oktober und November 2024 entworfen hat und mit denen sich die Ausgabequalität von Sprachmodellen spürbar steigern lässt. Eine ihrer wichtigsten Besonderheiten besteht darin, dass sie das Sprachmodell veranlassen, unmittelbar nach festgelegten Regeln SVG-Karten auszugeben.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Forschung on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/de/categories/forschung/</link>
+    <description>Recent content in Forschung on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>de</language>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/de/categories/forschung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Netzwerkanalyse: Signal und Nachhall</title>
+      <link>https://jethrovanbrook.com/de/posts/network-analysis-signal-and-reverberation/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/de/posts/network-analysis-signal-and-reverberation/</guid>
+      <description>&lt;p&gt;In meiner eher verbummelten Studienzeit im Bachelor gehörten die statistischen Methoden der Netzwerkanalyse zu dem wenigen Wissen, das ich mir wirklich mit Hingabe angeeignet hatte und auf das ich stolz war.&lt;/p&gt;
+&lt;p&gt;Kürzlich erfuhr ich, dass ein am 9. Oktober in &lt;em&gt;Nature Human Behaviour&lt;/em&gt; erschienener Artikel mit dem Titel &lt;em&gt;Statistical evidence in psychological networks&lt;/em&gt; die Verlässlichkeit statistischer Evidenz auf diesem Gebiet systematisch infrage stellt – wobei eine entscheidende Tatsache darin besteht, dass die Autoren vornehmlich aus der Geburtsstätte ebenjener Disziplin stammen: der niederländischen Universität Amsterdam.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

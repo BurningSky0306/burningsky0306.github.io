@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>심리학 on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ko/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/</link>
+    <description>Recent content in 심리학 on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ko</language>
+    <lastBuildDate>Wed, 15 Oct 2025 18:44:39 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ko/tags/%EC%8B%AC%EB%A6%AC%ED%95%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>네트워크 분석: 신호와 반향</title>
+      <link>https://jethrovanbrook.com/ko/posts/network-analysis-signal-and-reverberation/</link>
+      <pubDate>Wed, 15 Oct 2025 18:44:39 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ko/posts/network-analysis-signal-and-reverberation/</guid>
+      <description>&lt;p&gt;변변한 공부도 하지 않고 허송세월하던 학부 시절에, 네트워크 분석 통계 방법론은 내가 몇 안 되게 진심으로 파고들어 배웠고 또 자부심을 느끼던 지식이었다.&lt;/p&gt;
+&lt;p&gt;최근 알게 된 사실인데, 지난 10월 9일 &lt;em&gt;Nature Human Behaviour&lt;/em&gt;에 실린 논문 &lt;em&gt;Statistical evidence in psychological networks&lt;/em&gt;가 이 분야 통계적 증거의 신뢰성에 체계적으로 의문을 제기했다. 여기서 주목할 만한 핵심적인 사실은, 논문의 저자들이 주로 이 분야의 발원지인 네덜란드 암스테르담대학교 소속이라는 점이다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
