@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jethrovanbrook.com/en/categories/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -49,7 +49,7 @@
     <lastmod>2026-11-17T22:36:14+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/en/categories/essays/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -62,7 +62,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/en/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -128,7 +128,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/en/posts/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -174,7 +174,7 @@
     <lastmod>2026-11-17T22:36:14+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/en/tags/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -283,7 +283,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/en/tags/self/</loc>
-    <lastmod>2026-11-17T22:34:10+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/en/posts/the-price-of-becoming-myself/</loc>
     <lastmod>2026-11-17T22:34:10+08:00</lastmod>
@@ -612,6 +612,72 @@
                 href="https://jethrovanbrook.com/en/tags/prompts/"
                 />
   </url><url>
+    <loc>https://jethrovanbrook.com/en/posts/first-impression-of-shenzhen/</loc>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/posts/first-impression-of-shenzhen/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/en/tags/shenzhen/</loc>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/tags/shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/tags/shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/tags/shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/tags/shenzhen/"
+                />
+  </url><url>
     <loc>https://jethrovanbrook.com/en/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -694,28 +760,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://jethrovanbrook.com/en/search/"
-                />
-  </url><url>
-    <loc>https://jethrovanbrook.com/en/tags/shenzhen/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://jethrovanbrook.com/fr/tags/shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://jethrovanbrook.com/es/tags/shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jethrovanbrook.com/de/tags/shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://jethrovanbrook.com/en/tags/shenzhen/"
                 />
   </url>
 </urlset>

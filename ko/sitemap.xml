@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jethrovanbrook.com/ko/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -46,7 +46,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/ko/posts/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -138,7 +138,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/ko/categories/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -181,10 +181,10 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/ko/categories/%EC%97%90%EC%84%B8%EC%9D%B4/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/ko/tags/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -233,7 +233,7 @@
     <lastmod>2026-11-17T22:34:10+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/ko/tags/%EC%9E%90%EC%95%84/</loc>
-    <lastmod>2026-11-17T22:34:10+08:00</lastmod>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/ko/posts/the-price-of-becoming-myself/</loc>
     <lastmod>2026-11-17T22:34:10+08:00</lastmod>
@@ -502,6 +502,52 @@
     <loc>https://jethrovanbrook.com/ko/tags/%ED%94%84%EB%A1%AC%ED%94%84%ED%8A%B8/</loc>
     <lastmod>2026-11-17T22:35:09+08:00</lastmod>
   </url><url>
+    <loc>https://jethrovanbrook.com/ko/posts/first-impression-of-shenzhen/</loc>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/posts/first-impression-of-shenzhen/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/posts/first-impression-of-shenzhen/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/ko/tags/%EC%84%A0%EC%A0%84/</loc>
+    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+  </url><url>
     <loc>https://jethrovanbrook.com/ko/search/</loc>
     <xhtml:link
                 rel="alternate"
@@ -543,8 +589,6 @@
                 hreflang="ko"
                 href="https://jethrovanbrook.com/ko/search/"
                 />
-  </url><url>
-    <loc>https://jethrovanbrook.com/ko/tags/%EC%84%A0%EC%A0%84/</loc>
   </url><url>
     <loc>https://jethrovanbrook.com/ko/archives/</loc>
     <xhtml:link

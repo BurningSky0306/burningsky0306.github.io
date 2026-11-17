@@ -6,7 +6,7 @@
     <description>Recent content on Jethro Vanbrook&#39;s Blog</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Tue, 17 Nov 2026 22:36:14 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 23:12:13 +0800</lastBuildDate>
     <atom:link href="https://jethrovanbrook.com/zh-hant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>誰握著火柴，誰成為柴薪</title>
@@ -55,6 +55,14 @@
       <guid>https://jethrovanbrook.com/zh-hant/posts/modified-card-prompts/</guid>
       <description>&lt;h2 id=&#34;李繼剛的七把武器提示詞是什麼&#34;&gt;李繼剛的「七把武器」提示詞是什麼？&lt;/h2&gt;
 &lt;p&gt;「七把武器」提示詞是由 Prompter 李繼剛於 2024 年 10 月到 11 月之間所創作的七個思維工具提示詞，其能夠有效提高大模型輸出品質。該提示詞最大的特點之一在於可以直接讓大模型按照預設規則輸出 SVG 卡片。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>站在洪流的入口</title>
+      <link>https://jethrovanbrook.com/zh-hant/posts/first-impression-of-shenzhen/</link>
+      <pubDate>Wed, 24 Sep 2025 00:54:25 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hant/posts/first-impression-of-shenzhen/</guid>
+      <description>&lt;p&gt;來到深大已經是第七天了。這座校園，乃至其背後的深圳，正向我呈現一組鮮明的悖論。&lt;/p&gt;
+&lt;p&gt;深大擁有世界級的資源——觸手可及的機遇、雄厚的資金支援、與城市無縫銜接的交通網路。然而，它又在最基本的體驗層面暴露出粗糙的一面——遠無法與我的本科所在大學天師大相比的食堂、與這片創新高地的聲名極不匹配的校園網路、由於缺乏非機動車道規劃而帶來的危險道路出行體驗。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
