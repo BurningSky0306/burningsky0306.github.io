@@ -527,52 +527,6 @@
                 href="https://jethrovanbrook.com/ja/posts/modified-card-prompts/"
                 />
   </url><url>
-    <loc>https://jethrovanbrook.com/ja/tags/%E6%B7%B1%E3%82%BB%E3%83%B3/</loc>
-    <lastmod>2026-11-17T22:31:09+08:00</lastmod>
-  </url><url>
-    <loc>https://jethrovanbrook.com/ja/posts/first-impression-of-shenzhen/</loc>
-    <lastmod>2026-11-17T22:31:09+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://jethrovanbrook.com/zh-hans/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="https://jethrovanbrook.com/zh-hant/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://jethrovanbrook.com/ko/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://jethrovanbrook.com/en/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://jethrovanbrook.com/fr/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://jethrovanbrook.com/es/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jethrovanbrook.com/de/posts/first-impression-of-shenzhen/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://jethrovanbrook.com/ja/posts/first-impression-of-shenzhen/"
-                />
-  </url><url>
     <loc>https://jethrovanbrook.com/ja/archives/</loc>
     <xhtml:link
                 rel="alternate"
@@ -656,5 +610,7 @@
                 hreflang="ja"
                 href="https://jethrovanbrook.com/ja/search/"
                 />
+  </url><url>
+    <loc>https://jethrovanbrook.com/ja/tags/%E6%B7%B1%E3%82%BB%E3%83%B3/</loc>
   </url>
 </urlset>
