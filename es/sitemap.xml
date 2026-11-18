@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jethrovanbrook.com/es/categories/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -45,14 +45,11 @@
                 href="https://jethrovanbrook.com/es/categories/"
                 />
   </url><url>
-    <loc>https://jethrovanbrook.com/es/tags/educaci%C3%B3n/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
-  </url><url>
     <loc>https://jethrovanbrook.com/es/categories/ensayos/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/es/tags/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -94,8 +91,11 @@
                 href="https://jethrovanbrook.com/es/tags/"
                 />
   </url><url>
+    <loc>https://jethrovanbrook.com/es/tags/gran-relato/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+  </url><url>
     <loc>https://jethrovanbrook.com/es/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -137,34 +137,11 @@
                 href="https://jethrovanbrook.com/es/"
                 />
   </url><url>
-    <loc>https://jethrovanbrook.com/es/tags/pierre-bourdieu/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://jethrovanbrook.com/en/tags/pierre-bourdieu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://jethrovanbrook.com/fr/tags/pierre-bourdieu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jethrovanbrook.com/de/tags/pierre-bourdieu/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://jethrovanbrook.com/es/tags/pierre-bourdieu/"
-                />
-  </url><url>
     <loc>https://jethrovanbrook.com/es/tags/poder/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/es/posts/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -204,6 +181,75 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://jethrovanbrook.com/es/posts/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/es/posts/those-who-applaud-the-machine/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/posts/those-who-applaud-the-machine/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/es/tags/educaci%C3%B3n/</loc>
+    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+  </url><url>
+    <loc>https://jethrovanbrook.com/es/tags/pierre-bourdieu/</loc>
+    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/tags/pierre-bourdieu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/tags/pierre-bourdieu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/tags/pierre-bourdieu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/tags/pierre-bourdieu/"
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/es/posts/who-holds-the-match-who-becomes-the-firewood/</loc>

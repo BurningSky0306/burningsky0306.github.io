@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>大きな物語 on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ja/tags/%E5%A4%A7%E3%81%8D%E3%81%AA%E7%89%A9%E8%AA%9E/</link>
+    <description>Recent content in 大きな物語 on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 18 Nov 2026 19:05:15 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ja/tags/%E5%A4%A7%E3%81%8D%E3%81%AA%E7%89%A9%E8%AA%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>機械に拍手を送る人々</title>
+      <link>https://jethrovanbrook.com/ja/posts/those-who-applaud-the-machine/</link>
+      <pubDate>Wed, 18 Nov 2026 18:15:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ja/posts/those-who-applaud-the-machine/</guid>
+      <description>機械にすり減らされている人ほど、その稼働に最も熱烈な拍手を送ることがある。その拍手がどこから来るのかを理解しようと試みつつ、なぜ自分がそこに加わらないのかを記す。</description>
+    </item>
+  </channel>
+</rss>

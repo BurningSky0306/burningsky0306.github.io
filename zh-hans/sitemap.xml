@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jethrovanbrook.com/zh-hans/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
@@ -46,7 +46,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/posts/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
@@ -89,7 +89,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/tags/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
@@ -131,11 +131,8 @@
                 href="https://jethrovanbrook.com/zh-hans/tags/"
                 />
   </url><url>
-    <loc>https://jethrovanbrook.com/zh-hans/tags/%E5%B8%83%E8%BF%AA%E5%8E%84/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
-  </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/categories/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-TW"
@@ -177,6 +174,61 @@
                 href="https://jethrovanbrook.com/zh-hans/categories/"
                 />
   </url><url>
+    <loc>https://jethrovanbrook.com/zh-hans/tags/%E5%AE%8F%E5%A4%A7%E5%8F%99%E4%BA%8B/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hans/tags/%E6%9D%83%E5%8A%9B/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hans/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hans/posts/those-who-applaud-the-machine/</loc>
+    <lastmod>2026-11-18T19:05:15+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/posts/those-who-applaud-the-machine/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/posts/those-who-applaud-the-machine/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hans/tags/%E5%B8%83%E8%BF%AA%E5%8E%84/</loc>
+    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
+  </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/tags/%E6%95%99%E8%82%B2/</loc>
     <lastmod>2026-11-17T22:36:14+08:00</lastmod>
     <xhtml:link
@@ -194,9 +246,6 @@
                 hreflang="zh-CN"
                 href="https://jethrovanbrook.com/zh-hans/tags/%E6%95%99%E8%82%B2/"
                 />
-  </url><url>
-    <loc>https://jethrovanbrook.com/zh-hans/tags/%E6%9D%83%E5%8A%9B/</loc>
-    <lastmod>2026-11-17T22:36:14+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/posts/who-holds-the-match-who-becomes-the-firewood/</loc>
     <lastmod>2026-11-17T22:36:14+08:00</lastmod>
@@ -240,9 +289,6 @@
                 hreflang="zh-CN"
                 href="https://jethrovanbrook.com/zh-hans/posts/who-holds-the-match-who-becomes-the-firewood/"
                 />
-  </url><url>
-    <loc>https://jethrovanbrook.com/zh-hans/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-11-17T23:12:13+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hans/posts/the-price-of-becoming-myself/</loc>
     <lastmod>2026-11-17T22:34:10+08:00</lastmod>
