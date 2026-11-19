@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Agent on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/zh-hant/tags/agent/</link>
+    <description>Recent content in Agent on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/zh-hant/tags/agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>越過奇點之後，我是唯一的瓶頸</title>
+      <link>https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>當前沿模型跨過個人的適應性奇點，阻礙任務推進的壁壘便從工具退回了我自己。在用不完的算力餘量面前，我不得不從一問一答的互動中心抽身，嘗試成為設計自主執行系統的那個人。</description>
+    </item>
+  </channel>
+</rss>

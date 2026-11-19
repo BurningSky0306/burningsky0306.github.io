@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ko/tags/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ko</language>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ko/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>특이점을 넘은 뒤, 유일한 병목은 나 자신이다</title>
+      <link>https://jethrovanbrook.com/ko/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ko/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>프런티어 모델이 개인의 적응적 특이점을 넘어서자, 작업의 전진을 가로막는 장벽은 도구에서 나 자신에게로 되돌아왔다. 다 쓰지도 못할 만큼 남아도는 연산력 앞에서, 나는 일문일답식 상호작용의 중심에서 물러나 자율적으로 작동하는 시스템을 설계하는 사람이 되어야만 했다.</description>
+    </item>
+  </channel>
+</rss>

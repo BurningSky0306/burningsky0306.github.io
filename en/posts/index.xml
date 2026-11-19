@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Jethro Vanbrook&#39;s Blog</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Nov 2026 21:29:37 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
     <atom:link href="https://jethrovanbrook.com/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Past the Singularity, I Am the Only Bottleneck</title>
+      <link>https://jethrovanbrook.com/en/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/en/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>Once frontier models cross one’s personal adaptive singularity, the barrier holding back a task retreats from the tool to oneself. Faced with a surplus of compute I cannot spend down, I have had to step out from the center of question-and-answer interaction and try to become the one who designs systems that run on their own.</description>
+    </item>
     <item>
       <title>Those Who Applaud the Machine</title>
       <link>https://jethrovanbrook.com/en/posts/those-who-applaud-the-machine/</link>

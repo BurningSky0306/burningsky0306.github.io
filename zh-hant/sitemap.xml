@@ -2,8 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jethrovanbrook.com/zh-hant/tags/agent/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/tags/agent/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/tags/agent/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hant/tags/ai/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/tags/ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/tags/ai/"
+                />
+  </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/</loc>
-    <lastmod>2026-11-18T21:29:37+08:00</lastmod>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -46,7 +87,7 @@
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/posts/</loc>
-    <lastmod>2026-11-18T21:29:37+08:00</lastmod>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -88,8 +129,21 @@
                 href="https://jethrovanbrook.com/zh-hant/posts/"
                 />
   </url><url>
+    <loc>https://jethrovanbrook.com/zh-hant/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
+                />
+  </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/categories/</loc>
-    <lastmod>2026-11-18T21:29:37+08:00</lastmod>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-CN"
@@ -130,6 +184,95 @@
                 hreflang="zh-TW"
                 href="https://jethrovanbrook.com/zh-hant/categories/"
                 />
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hant/tags/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="https://jethrovanbrook.com/zh-hans/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://jethrovanbrook.com/ja/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://jethrovanbrook.com/ko/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jethrovanbrook.com/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://jethrovanbrook.com/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://jethrovanbrook.com/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://jethrovanbrook.com/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-TW"
+                href="https://jethrovanbrook.com/zh-hant/tags/"
+                />
+  </url><url>
+    <loc>https://jethrovanbrook.com/zh-hant/categories/%E9%9A%A8%E7%AD%86/</loc>
+    <lastmod>2026-11-20T01:03:10+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/tags/%E5%AE%8F%E5%A4%A7%E6%95%98%E4%BA%8B/</loc>
     <lastmod>2026-11-18T20:20:22+08:00</lastmod>
@@ -176,52 +319,6 @@
                 hreflang="zh-TW"
                 href="https://jethrovanbrook.com/zh-hant/posts/those-who-applaud-the-machine/"
                 />
-  </url><url>
-    <loc>https://jethrovanbrook.com/zh-hant/tags/</loc>
-    <lastmod>2026-11-18T21:29:37+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://jethrovanbrook.com/zh-hans/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://jethrovanbrook.com/ja/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://jethrovanbrook.com/ko/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://jethrovanbrook.com/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://jethrovanbrook.com/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://jethrovanbrook.com/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://jethrovanbrook.com/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="https://jethrovanbrook.com/zh-hant/tags/"
-                />
-  </url><url>
-    <loc>https://jethrovanbrook.com/zh-hant/categories/%E9%9A%A8%E7%AD%86/</loc>
-    <lastmod>2026-11-18T20:31:12+08:00</lastmod>
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/tags/%E6%AC%8A%E5%8A%9B/</loc>
     <lastmod>2026-11-18T20:31:12+08:00</lastmod>
@@ -522,19 +619,6 @@
                 rel="alternate"
                 hreflang="zh-TW"
                 href="https://jethrovanbrook.com/zh-hant/categories/ai/"
-                />
-  </url><url>
-    <loc>https://jethrovanbrook.com/zh-hant/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-11-18T20:32:36+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-CN"
-                href="https://jethrovanbrook.com/zh-hans/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-TW"
-                href="https://jethrovanbrook.com/zh-hant/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/"
                 />
   </url><url>
     <loc>https://jethrovanbrook.com/zh-hant/posts/modified-card-prompts/</loc>

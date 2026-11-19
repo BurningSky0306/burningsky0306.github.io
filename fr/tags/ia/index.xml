@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IA on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/fr/tags/ia/</link>
+    <description>Recent content in IA on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/fr/tags/ia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Au-delà de la singularité, je suis le seul goulot d’étranglement</title>
+      <link>https://jethrovanbrook.com/fr/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/fr/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>Lorsque les modèles de pointe franchissent notre singularité adaptative personnelle, l’obstacle qui freine l’avancement des tâches se déplace de l’outil vers nous-mêmes. Face à un surplus inépuisable de puissance de calcul, j’ai dû me retirer du centre de l’interaction faite de questions et de réponses pour tenter de devenir celui qui conçoit des systèmes autonomes.</description>
+    </item>
+  </channel>
+</rss>

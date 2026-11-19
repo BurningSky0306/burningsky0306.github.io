@@ -6,8 +6,15 @@
     <description>Recent content in 大模型 on Jethro Vanbrook&#39;s Blog</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 18 Nov 2026 20:32:36 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
     <atom:link href="https://jethrovanbrook.com/zh-hant/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>越過奇點之後，我是唯一的瓶頸</title>
+      <link>https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/zh-hant/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>當前沿模型跨過個人的適應性奇點，阻礙任務推進的壁壘便從工具退回了我自己。在用不完的算力餘量面前，我不得不從一問一答的互動中心抽身，嘗試成為設計自主執行系統的那個人。</description>
+    </item>
     <item>
       <title>基於李繼剛的「七把武器」提示詞進行修改後的卡片提示詞</title>
       <link>https://jethrovanbrook.com/zh-hant/posts/modified-card-prompts/</link>

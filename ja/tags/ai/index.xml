@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI on Jethro Vanbrook&#39;s Blog</title>
+    <link>https://jethrovanbrook.com/ja/tags/ai/</link>
+    <description>Recent content in AI on Jethro Vanbrook&#39;s Blog</description>
+    <generator>Hugo -- 0.154.3</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 20 Nov 2026 01:03:10 +0800</lastBuildDate>
+    <atom:link href="https://jethrovanbrook.com/ja/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>特異点を越えた今、唯一のボトルネックは私自身だ</title>
+      <link>https://jethrovanbrook.com/ja/posts/beyond-the-singularity-i-am-the-bottleneck/</link>
+      <pubDate>Fri, 20 Nov 2026 00:00:00 +0800</pubDate>
+      <guid>https://jethrovanbrook.com/ja/posts/beyond-the-singularity-i-am-the-bottleneck/</guid>
+      <description>最先端モデルが個人の「適応的特異点」を越えたとき、タスクの進行を阻む壁はツールから私自身へと戻ってきた。使い切れないほどの計算資源を前にして、私は一問一答という対話の中心から身を引き、自律的に稼働するシステムを設計する側へと回らざるを得なくなっている。</description>
+    </item>
+  </channel>
+</rss>
